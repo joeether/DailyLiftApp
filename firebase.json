@@ -1,0 +1,18 @@
+{
+  "hosting": {
+    "public": "DailyLiftApp/DailyLiftApp.Client/bin/Release/net8.0/publish/wwwroot",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
