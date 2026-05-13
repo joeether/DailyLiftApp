@@ -1,0 +1,2242 @@
+[
+ {
+   "ID": 1,
+   "Category": "Dad Joke",
+   "Title": "Why don’t skeletons fight each other?",
+   "Content": "They don’t have the guts.",
+   "Combined": "Why don’t skeletons fight each other? They don’t have the guts."
+ },
+ {
+   "ID": 2,
+   "Category": "Dad Joke",
+   "Title": "Did you hear about the cheese factory explosion?",
+   "Content": "There was nothing left but de-brie.",
+   "Combined": "Did you hear about the cheese factory explosion? There was nothing left but de-brie."
+ },
+ {
+   "ID": 3,
+   "Category": "Dad Joke",
+   "Title": "Why did the scarecrow win an award?",
+   "Content": "Because he was outstanding in his field.",
+   "Combined": "Why did the scarecrow win an award? Because he was outstanding in his field."
+ },
+ {
+   "ID": 4,
+   "Category": "Dad Joke",
+   "Title": "How does a penguin build its house?",
+   "Content": "Igloos it together.",
+   "Combined": "How does a penguin build its house? Igloos it together."
+ },
+ {
+   "ID": 5,
+   "Category": "Dad Joke",
+   "Title": "Why can’t you give Elsa a balloon?",
+   "Content": "Because she’ll let it go.",
+   "Combined": "Why can’t you give Elsa a balloon? Because she’ll let it go."
+ },
+ {
+   "ID": 6,
+   "Category": "Dad Joke",
+   "Title": "What do you call fake spaghetti?",
+   "Content": "An impasta.",
+   "Combined": "What do you call fake spaghetti? An impasta."
+ },
+ {
+   "ID": 7,
+   "Category": "Dad Joke",
+   "Title": "Why did the golfer bring two pairs of pants?",
+   "Content": "In case he got a hole in one.",
+   "Combined": "Why did the golfer bring two pairs of pants? In case he got a hole in one."
+ },
+ {
+   "ID": 8,
+   "Category": "Dad Joke",
+   "Title": "Why don’t eggs tell each other jokes?",
+   "Content": "They might crack up.",
+   "Combined": "Why don’t eggs tell each other jokes? They might crack up."
+ },
+ {
+   "ID": 9,
+   "Category": "Dad Joke",
+   "Title": "Want to hear a joke about construction?",
+   "Content": "I’m still working on it.",
+   "Combined": "Want to hear a joke about construction? I’m still working on it."
+ },
+ {
+   "ID": 10,
+   "Category": "Dad Joke",
+   "Title": "Why did the math book look sad?",
+   "Content": "It had too many problems.",
+   "Combined": "Why did the math book look sad? It had too many problems."
+ },
+ {
+   "ID": 11,
+   "Category": "Dad Joke",
+   "Title": "What do you call a fish wearing a bowtie?",
+   "Content": "Sofishticated.",
+   "Combined": "What do you call a fish wearing a bowtie? Sofishticated."
+ },
+ {
+   "ID": 12,
+   "Category": "Dad Joke",
+   "Title": "Why are elevator jokes so good?",
+   "Content": "Because they work on so many levels.",
+   "Combined": "Why are elevator jokes so good? Because they work on so many levels."
+ },
+ {
+   "ID": 13,
+   "Category": "Dad Joke",
+   "Title": "How do you organize a space party?",
+   "Content": "You planet.",
+   "Combined": "How do you organize a space party? You planet."
+ },
+ {
+   "ID": 14,
+   "Category": "Dad Joke",
+   "Title": "What did the zero say to the eight?",
+   "Content": "Nice belt.",
+   "Combined": "What did the zero say to the eight? Nice belt."
+ },
+ {
+   "ID": 15,
+   "Category": "Dad Joke",
+   "Title": "Why did the bicycle fall over?",
+   "Content": "It was two tired.",
+   "Combined": "Why did the bicycle fall over? It was two tired."
+ },
+ {
+   "ID": 16,
+   "Category": "Dad Joke",
+   "Title": "What do you call cheese that isn't yours?",
+   "Content": "Nacho cheese.",
+   "Combined": "What do you call cheese that isn't yours? Nacho cheese."
+ },
+ {
+   "ID": 17,
+   "Category": "Dad Joke",
+   "Title": "Why did the tomato turn red?",
+   "Content": "Because it saw the salad dressing.",
+   "Combined": "Why did the tomato turn red? Because it saw the salad dressing."
+ },
+ {
+   "ID": 18,
+   "Category": "Dad Joke",
+   "Title": "How do you make a tissue dance?",
+   "Content": "Put a little boogie in it.",
+   "Combined": "How do you make a tissue dance? Put a little boogie in it."
+ },
+ {
+   "ID": 19,
+   "Category": "Dad Joke",
+   "Title": "What do you call an alligator in a vest?",
+   "Content": "An investigator.",
+   "Combined": "What do you call an alligator in a vest? An investigator."
+ },
+ {
+   "ID": 20,
+   "Category": "Dad Joke",
+   "Title": "Why did the coffee file a police report?",
+   "Content": "It got mugged.",
+   "Combined": "Why did the coffee file a police report? It got mugged."
+ },
+ {
+   "ID": 21,
+   "Category": "Dad Joke",
+   "Title": "What did one wall say to the other wall?",
+   "Content": "I’ll meet you at the corner.",
+   "Combined": "What did one wall say to the other wall? I’ll meet you at the corner."
+ },
+ {
+   "ID": 22,
+   "Category": "Dad Joke",
+   "Title": "Why did the stadium get hot after the game?",
+   "Content": "All the fans left.",
+   "Combined": "Why did the stadium get hot after the game? All the fans left."
+ },
+ {
+   "ID": 23,
+   "Category": "Dad Joke",
+   "Title": "What do you call a can opener that doesn’t work?",
+   "Content": "A can’t opener.",
+   "Combined": "What do you call a can opener that doesn’t work? A can’t opener."
+ },
+ {
+   "ID": 24,
+   "Category": "Dad Joke",
+   "Title": "Why did the cookie go to the hospital?",
+   "Content": "Because he felt crummy.",
+   "Combined": "Why did the cookie go to the hospital? Because he felt crummy."
+ },
+ {
+   "ID": 25,
+   "Category": "Dad Joke",
+   "Title": "What do you call a factory that makes good products?",
+   "Content": "A satisfactory.",
+   "Combined": "What do you call a factory that makes good products? A satisfactory."
+ },
+ {
+   "ID": 26,
+   "Category": "Dad Joke",
+   "Title": "Why can’t you hear a pterodactyl using the bathroom?",
+   "Content": "Because the “P” is silent.",
+   "Combined": "Why can’t you hear a pterodactyl using the bathroom? Because the “P” is silent."
+ },
+ {
+   "ID": 27,
+   "Category": "Dad Joke",
+   "Title": "What do you call a sleeping bull?",
+   "Content": "A bulldozer.",
+   "Combined": "What do you call a sleeping bull? A bulldozer."
+ },
+ {
+   "ID": 28,
+   "Category": "Dad Joke",
+   "Title": "What time did the man go to the dentist?",
+   "Content": "Tooth-hurty.",
+   "Combined": "What time did the man go to the dentist? Tooth-hurty."
+ },
+ {
+   "ID": 29,
+   "Category": "Dad Joke",
+   "Title": "Why are frogs so happy?",
+   "Content": "Because they eat whatever bugs them.",
+   "Combined": "Why are frogs so happy? Because they eat whatever bugs them."
+ },
+ {
+   "ID": 30,
+   "Category": "Dad Joke",
+   "Title": "Why did the computer go to the doctor?",
+   "Content": "Because it had a virus.",
+   "Combined": "Why did the computer go to the doctor? Because it had a virus."
+ },
+ {
+   "ID": 31,
+   "Category": "Dad Joke",
+   "Title": "Why do seagulls fly over the ocean?",
+   "Content": "Because if they flew over the bay, they’d be bagels.",
+   "Combined": "Why do seagulls fly over the ocean? Because if they flew over the bay, they’d be bagels."
+ },
+ {
+   "ID": 32,
+   "Category": "Dad Joke",
+   "Title": "Why did the man run around his bed?",
+   "Content": "Because he was trying to catch up on his sleep.",
+   "Combined": "Why did the man run around his bed? Because he was trying to catch up on his sleep."
+ },
+ {
+   "ID": 33,
+   "Category": "Dad Joke",
+   "Title": "What did the janitor say when he jumped out of the closet?",
+   "Content": "Supplies!",
+   "Combined": "What did the janitor say when he jumped out of the closet? Supplies!"
+ },
+ {
+   "ID": 34,
+   "Category": "Dad Joke",
+   "Title": "Why are ghosts bad at lying?",
+   "Content": "Because they are too transparent.",
+   "Combined": "Why are ghosts bad at lying? Because they are too transparent."
+ },
+ {
+   "ID": 35,
+   "Category": "Dad Joke",
+   "Title": "Why did the bicycle stand up by itself?",
+   "Content": "Because it was two-tired.",
+   "Combined": "Why did the bicycle stand up by itself? Because it was two-tired."
+ },
+ {
+   "ID": 36,
+   "Category": "Dad Joke",
+   "Title": "How do you make holy water?",
+   "Content": "You boil the hell out of it.",
+   "Combined": "How do you make holy water? You boil the hell out of it."
+ },
+ {
+   "ID": 37,
+   "Category": "Dad Joke",
+   "Title": "Why was the math teacher late to work?",
+   "Content": "He took the rhombus.",
+   "Combined": "Why was the math teacher late to work? He took the rhombus."
+ },
+ {
+   "ID": 38,
+   "Category": "Dad Joke",
+   "Title": "Why did the chicken go to the seance?",
+   "Content": "To talk to the other side.",
+   "Combined": "Why did the chicken go to the seance? To talk to the other side."
+ },
+ {
+   "ID": 39,
+   "Category": "Dad Joke",
+   "Title": "Why did the banana go to the doctor?",
+   "Content": "Because it wasn’t peeling well.",
+   "Combined": "Why did the banana go to the doctor? Because it wasn’t peeling well."
+ },
+ {
+   "ID": 40,
+   "Category": "Dad Joke",
+   "Title": "Why can’t your nose be 12 inches long?",
+   "Content": "Because then it would be a foot.",
+   "Combined": "Why can’t your nose be 12 inches long? Because then it would be a foot."
+ },
+ {
+   "ID": 41,
+   "Category": "Dad Joke",
+   "Title": "What’s brown and sticky?",
+   "Content": "A stick.",
+   "Combined": "What’s brown and sticky? A stick."
+ },
+ {
+   "ID": 42,
+   "Category": "Dad Joke",
+   "Title": "What did one hat say to the other?",
+   "Content": "You stay here, I’ll go on ahead.",
+   "Combined": "What did one hat say to the other? You stay here, I’ll go on ahead."
+ },
+ {
+   "ID": 43,
+   "Category": "Dad Joke",
+   "Title": "Why did the man put his money in the freezer?",
+   "Content": "He wanted cold hard cash.",
+   "Combined": "Why did the man put his money in the freezer? He wanted cold hard cash."
+ },
+ {
+   "ID": 44,
+   "Category": "Dad Joke",
+   "Title": "Why did the cow win an award?",
+   "Content": "Because she was outstanding in her field.",
+   "Combined": "Why did the cow win an award? Because she was outstanding in her field."
+ },
+ {
+   "ID": 45,
+   "Category": "Dad Joke",
+   "Title": "How do you catch a squirrel?",
+   "Content": "Climb a tree and act like a nut!",
+   "Combined": "How do you catch a squirrel? Climb a tree and act like a nut!"
+ },
+ {
+   "ID": 46,
+   "Category": "Dad Joke",
+   "Title": "Why did the man get hit by a bike every day?",
+   "Content": "He was stuck in a vicious cycle.",
+   "Combined": "Why did the man get hit by a bike every day? He was stuck in a vicious cycle."
+ },
+ {
+   "ID": 47,
+   "Category": "Dad Joke",
+   "Title": "Why do melons have weddings?",
+   "Content": "Because they cantaloupe.",
+   "Combined": "Why do melons have weddings? Because they cantaloupe."
+ },
+ {
+   "ID": 48,
+   "Category": "Dad Joke",
+   "Title": "Why did the old man fall in the well?",
+   "Content": "Because he couldn’t see that well.",
+   "Combined": "Why did the old man fall in the well? Because he couldn’t see that well."
+ },
+ {
+   "ID": 49,
+   "Category": "Dad Joke",
+   "Title": "Why do cows wear bells?",
+   "Content": "Because their horns don’t work.",
+   "Combined": "Why do cows wear bells? Because their horns don’t work."
+ },
+ {
+   "ID": 50,
+   "Category": "Dad Joke",
+   "Title": "How does a vampire start a letter?",
+   "Content": "Tomb it may concern…",
+   "Combined": "How does a vampire start a letter? Tomb it may concern…"
+ },
+ {
+   "ID": 51,
+   "Category": "Dad Joke",
+   "Title": "Why did the mushroom go to the party?",
+   "Content": "Because he was a fungi to be with.",
+   "Combined": "Why did the mushroom go to the party? Because he was a fungi to be with."
+ },
+ {
+   "ID": 52,
+   "Category": "Dad Joke",
+   "Title": "What did one plate say to the other plate?",
+   "Content": "Dinner’s on me.",
+   "Combined": "What did one plate say to the other plate? Dinner’s on me."
+ },
+ {
+   "ID": 53,
+   "Category": "Dad Joke",
+   "Title": "Why are fish so smart?",
+   "Content": "Because they live in schools.",
+   "Combined": "Why are fish so smart? Because they live in schools."
+ },
+ {
+   "ID": 54,
+   "Category": "Dad Joke",
+   "Title": "Why did the duck get a job?",
+   "Content": "He was a quack-up.",
+   "Combined": "Why did the duck get a job? He was a quack-up."
+ },
+ {
+   "ID": 55,
+   "Category": "Dad Joke",
+   "Title": "Why can’t you trust stairs?",
+   "Content": "They’re always up to something.",
+   "Combined": "Why can’t you trust stairs? They’re always up to something."
+ },
+ {
+   "ID": 56,
+   "Category": "Dad Joke",
+   "Title": "Why do bees have sticky hair?",
+   "Content": "Because they use honeycombs.",
+   "Combined": "Why do bees have sticky hair? Because they use honeycombs."
+ },
+ {
+   "ID": 57,
+   "Category": "Dad Joke",
+   "Title": "Why was the broom late?",
+   "Content": "It swept in.",
+   "Combined": "Why was the broom late? It swept in."
+ },
+ {
+   "ID": 58,
+   "Category": "Dad Joke",
+   "Title": "What did the big flower say to the little flower?",
+   "Content": "Hi, bud!",
+   "Combined": "What did the big flower say to the little flower? Hi, bud!"
+ },
+ {
+   "ID": 59,
+   "Category": "Dad Joke",
+   "Title": "Why did the barber win the race?",
+   "Content": "He knew all the shortcuts.",
+   "Combined": "Why did the barber win the race? He knew all the shortcuts."
+ },
+ {
+   "ID": 60,
+   "Category": "Dad Joke",
+   "Title": "How do you organize a fantastic party in space?",
+   "Content": "You planet.",
+   "Combined": "How do you organize a fantastic party in space? You planet."
+ },
+ {
+   "ID": 61,
+   "Category": "Dad Joke",
+   "Title": "Why did the golfer bring an extra shirt?",
+   "Content": "In case he got a hole in one.",
+   "Combined": "Why did the golfer bring an extra shirt? In case he got a hole in one."
+ },
+ {
+   "ID": 62,
+   "Category": "Dad Joke",
+   "Title": "Why did the orange stop?",
+   "Content": "It ran out of juice.",
+   "Combined": "Why did the orange stop? It ran out of juice."
+ },
+ {
+   "ID": 63,
+   "Category": "Dad Joke",
+   "Title": "How do cows stay up to date with current events?",
+   "Content": "They read the moos-paper.",
+   "Combined": "How do cows stay up to date with current events? They read the moos-paper."
+ },
+ {
+   "ID": 64,
+   "Category": "Dad Joke",
+   "Title": "Why did the picture go to jail?",
+   "Content": "Because it was framed.",
+   "Combined": "Why did the picture go to jail? Because it was framed."
+ },
+ {
+   "ID": 65,
+   "Category": "Dad Joke",
+   "Title": "Why did the chicken join a band?",
+   "Content": "Because it had the drumsticks.",
+   "Combined": "Why did the chicken join a band? Because it had the drumsticks."
+ },
+ {
+   "ID": 66,
+   "Category": "Dad Joke",
+   "Title": "Why did the crab never share?",
+   "Content": "Because he’s shellfish.",
+   "Combined": "Why did the crab never share? Because he’s shellfish."
+ },
+ {
+   "ID": 67,
+   "Category": "Dad Joke",
+   "Title": "What did the grape do when he got stepped on?",
+   "Content": "Nothing, he just let out a little wine.",
+   "Combined": "What did the grape do when he got stepped on? Nothing, he just let out a little wine."
+ },
+ {
+   "ID": 68,
+   "Category": "Dad Joke",
+   "Title": "Why did the bicycle need a nap?",
+   "Content": "It was two tired.",
+   "Combined": "Why did the bicycle need a nap? It was two tired."
+ },
+ {
+   "ID": 69,
+   "Category": "Dad Joke",
+   "Title": "Why did the tree go to the barber?",
+   "Content": "It needed a trim.",
+   "Combined": "Why did the tree go to the barber? It needed a trim."
+ },
+ {
+   "ID": 70,
+   "Category": "Dad Joke",
+   "Title": "Why did the man put his money in the blender?",
+   "Content": "He wanted to make liquid assets.",
+   "Combined": "Why did the man put his money in the blender? He wanted to make liquid assets."
+ },
+ {
+   "ID": 71,
+   "Category": "Dad Joke",
+   "Title": "How do you catch a whole school of fish?",
+   "Content": "With a bookworm.",
+   "Combined": "How do you catch a whole school of fish? With a bookworm."
+ },
+ {
+   "ID": 72,
+   "Category": "Dad Joke",
+   "Title": "Why was the stadium so cool?",
+   "Content": "Because it was filled with fans.",
+   "Combined": "Why was the stadium so cool? Because it was filled with fans."
+ },
+ {
+   "ID": 73,
+   "Category": "Dad Joke",
+   "Title": "What do you call a bear with no teeth?",
+   "Content": "A gummy bear.",
+   "Combined": "What do you call a bear with no teeth? A gummy bear."
+ },
+ {
+   "ID": 74,
+   "Category": "Dad Joke",
+   "Title": "Why don’t oysters donate to charity?",
+   "Content": "Because they are shellfish.",
+   "Combined": "Why don’t oysters donate to charity? Because they are shellfish."
+ },
+ {
+   "ID": 75,
+   "Category": "Dad Joke",
+   "Title": "How do you get a tissue to dance?",
+   "Content": "Put a little boogie in it.",
+   "Combined": "How do you get a tissue to dance? Put a little boogie in it."
+ },
+ {
+   "ID": 76,
+   "Category": "Dad Joke",
+   "Title": "Why did the computer keep sneezing?",
+   "Content": "It had a virus.",
+   "Combined": "Why did the computer keep sneezing? It had a virus."
+ },
+ {
+   "ID": 77,
+   "Category": "Dad Joke",
+   "Title": "Why did the banker switch careers?",
+   "Content": "He lost interest.",
+   "Combined": "Why did the banker switch careers? He lost interest."
+ },
+ {
+   "ID": 78,
+   "Category": "Dad Joke",
+   "Title": "Why did the grape stop in the middle of the road?",
+   "Content": "He ran out of juice.",
+   "Combined": "Why did the grape stop in the middle of the road? He ran out of juice."
+ },
+ {
+   "ID": 79,
+   "Category": "Dad Joke",
+   "Title": "Why did the phone go to school?",
+   "Content": "To improve its cell-f.",
+   "Combined": "Why did the phone go to school? To improve its cell-f."
+ },
+ {
+   "ID": 80,
+   "Category": "Dad Joke",
+   "Title": "Why did the pencil get an award?",
+   "Content": "Because it had a point.",
+   "Combined": "Why did the pencil get an award? Because it had a point."
+ },
+ {
+   "ID": 81,
+   "Category": "Dad Joke",
+   "Title": "Why did the clock get kicked out of class?",
+   "Content": "Because it was tocking too much.",
+   "Combined": "Why did the clock get kicked out of class? Because it was tocking too much."
+ },
+ {
+   "ID": 82,
+   "Category": "Dad Joke",
+   "Title": "Why did the skeleton stay home from the party?",
+   "Content": "He had no body to go with.",
+   "Combined": "Why did the skeleton stay home from the party? He had no body to go with."
+ },
+ {
+   "ID": 83,
+   "Category": "Dad Joke",
+   "Title": "Why don’t you ever see elephants hiding in trees?",
+   "Content": "Because they’re so good at it.",
+   "Combined": "Why don’t you ever see elephants hiding in trees? Because they’re so good at it."
+ },
+ {
+   "ID": 84,
+   "Category": "Dad Joke",
+   "Title": "Why did the man take a ladder to the bar?",
+   "Content": "Because he heard the drinks were on the house.",
+   "Combined": "Why did the man take a ladder to the bar? Because he heard the drinks were on the house."
+ },
+ {
+   "ID": 85,
+   "Category": "Dad Joke",
+   "Title": "What do you call an underwater social network?",
+   "Content": "Fishbook.",
+   "Combined": "What do you call an underwater social network? Fishbook."
+ },
+ {
+   "ID": 86,
+   "Category": "Dad Joke",
+   "Title": "Why do ducks have feathers?",
+   "Content": "To cover their butt quacks.",
+   "Combined": "Why do ducks have feathers? To cover their butt quacks."
+ },
+ {
+   "ID": 87,
+   "Category": "Dad Joke",
+   "Title": "Why did the frog call his insurance company?",
+   "Content": "He had a jump in his car.",
+   "Combined": "Why did the frog call his insurance company? He had a jump in his car."
+ },
+ {
+   "ID": 88,
+   "Category": "Dad Joke",
+   "Title": "What did the left eye say to the right eye?",
+   "Content": "Between you and me, something smells.",
+   "Combined": "What did the left eye say to the right eye? Between you and me, something smells."
+ },
+ {
+   "ID": 89,
+   "Category": "Dad Joke",
+   "Title": "Why did the calendar go on a diet?",
+   "Content": "It wanted to lose its dates.",
+   "Combined": "Why did the calendar go on a diet? It wanted to lose its dates."
+ },
+ {
+   "ID": 90,
+   "Category": "Dad Joke",
+   "Title": "Why do vampires always seem sick?",
+   "Content": "They’re always coffin.",
+   "Combined": "Why do vampires always seem sick? They’re always coffin."
+ },
+ {
+   "ID": 1,
+   "Category": "History Fact",
+   "Title": "The Great Fire of London",
+   "Content": "In 1666, a fire that started in a bakery on Pudding Lane destroyed much of London, but only six people were officially recorded to have died.",
+   "Combined": "The Great Fire of London in 1666 started in a bakery on Pudding Lane and destroyed much of the city, but only six deaths were officially recorded."
+ },
+ {
+   "ID": 2,
+   "Category": "History Fact",
+   "Title": "Napoleon Wasn’t Short",
+   "Content": "Napoleon Bonaparte was actually around 5'6\" or 5'7\", average height for his time—his 'short' reputation came from a confusion between French and British measurements.",
+   "Combined": "Napoleon wasn’t actually short; he was average height for his time, but confusion between measurement systems made people think otherwise."
+ },
+ {
+   "ID": 3,
+   "Category": "History Fact",
+   "Title": "The Shortest War in History",
+   "Content": "The Anglo-Zanzibar War of 1896 lasted between 38 and 45 minutes, making it the shortest war in recorded history.",
+   "Combined": "The shortest war in history was between Britain and Zanzibar in 1896 and lasted less than an hour."
+ },
+ {
+   "ID": 4,
+   "Category": "History Fact",
+   "Title": "Cleopatra Was Not Egyptian",
+   "Content": "Cleopatra VII was actually Greek, from the Ptolemaic dynasty, which ruled Egypt after Alexander the Great's conquest.",
+   "Combined": "Though queen of Egypt, Cleopatra was of Greek origin, not Egyptian."
+ },
+ {
+   "ID": 5,
+   "Category": "History Fact",
+   "Title": "Einstein Was Offered Presidency",
+   "Content": "In 1952, Albert Einstein was offered the presidency of Israel but turned it down because he didn’t feel qualified.",
+   "Combined": "Albert Einstein declined the offer to become Israel’s president in 1952, saying he lacked the natural aptitude for politics."
+ },
+ {
+   "ID": 6,
+   "Category": "History Fact",
+   "Title": "The Eiffel Tower Grows and Shrinks",
+   "Content": "The Eiffel Tower can grow over 6 inches taller in the summer due to thermal expansion of the metal.",
+   "Combined": "In hot weather, the Eiffel Tower expands and can grow over 6 inches taller due to metal’s reaction to heat."
+ },
+ {
+   "ID": 7,
+   "Category": "History Fact",
+   "Title": "Julius Caesar Was Kidnapped",
+   "Content": "When Julius Caesar was kidnapped by pirates, he demanded they raise his ransom and later had them captured and executed.",
+   "Combined": "Caesar once told his pirate captors to raise his ransom and later hunted them down and had them executed after his release."
+ },
+ {
+   "ID": 8,
+   "Category": "History Fact",
+   "Title": "A Pope Put a Dead Pope on Trial",
+   "Content": "In 897 AD, Pope Stephen VI had his predecessor Pope Formosus exhumed, dressed in robes, and put on trial in the bizarre 'Cadaver Synod.'",
+   "Combined": "In the 9th century, a dead pope was exhumed and put on trial by his successor in one of the strangest moments in papal history."
+ },
+ {
+   "ID": 9,
+   "Category": "History Fact",
+   "Title": "The U.S. Once Planned to Nuke the Moon",
+   "Content": "During the Cold War, the U.S. military considered detonating a nuclear bomb on the moon to show strength to the Soviets.",
+   "Combined": "The U.S. once proposed nuking the moon as a Cold War show of force."
+ },
+ {
+   "ID": 10,
+   "Category": "History Fact",
+   "Title": "Witch Trials Allowed “Swimming” Tests",
+   "Content": "Accused witches were often “swum”—if they floated, they were guilty; if they sank, they were innocent but drowned.",
+   "Combined": "During witch trials, floating meant guilt and sinking meant death. Either way, accused witches rarely survived."
+ },
+ {
+   "ID": 11,
+   "Category": "History Fact",
+   "Title": "When was the Great Fire of London?",
+   "Content": "1666",
+   "Combined": "When was the Great Fire of London? 1666."
+ },
+ {
+   "ID": 12,
+   "Category": "History Fact",
+   "Title": "Who was the first Emperor of China?",
+   "Content": "Qin Shi Huang",
+   "Combined": "Who was the first Emperor of China? Qin Shi Huang."
+ },
+ {
+   "ID": 13,
+   "Category": "History Fact",
+   "Title": "What triggered World War I?",
+   "Content": "The assassination of Archduke Franz Ferdinand in 1914",
+   "Combined": "What triggered World War I? The assassination of Archduke Franz Ferdinand in 1914."
+ },
+ {
+   "ID": 14,
+   "Category": "History Fact",
+   "Title": "Who was the first President of South Africa after apartheid?",
+   "Content": "Nelson Mandela",
+   "Combined": "Who was the first President of South Africa after apartheid? Nelson Mandela."
+ },
+ {
+   "ID": 15,
+   "Category": "History Fact",
+   "Title": "When did the Berlin Wall fall?",
+   "Content": "1989",
+   "Combined": "When did the Berlin Wall fall? 1989."
+ },
+ {
+   "ID": 16,
+   "Category": "History Fact",
+   "Title": "Which ancient civilization built Machu Picchu?",
+   "Content": "The Incas",
+   "Combined": "Which ancient civilization built Machu Picchu? The Incas."
+ },
+ {
+   "ID": 17,
+   "Category": "History Fact",
+   "Title": "Who painted the ceiling of the Sistine Chapel?",
+   "Content": "Michelangelo",
+   "Combined": "Who painted the ceiling of the Sistine Chapel? Michelangelo."
+ },
+ {
+   "ID": 18,
+   "Category": "History Fact",
+   "Title": "What year did the Titanic sink?",
+   "Content": "1912",
+   "Combined": "What year did the Titanic sink? 1912."
+ },
+ {
+   "ID": 19,
+   "Category": "History Fact",
+   "Title": "Which empire was ruled by Genghis Khan?",
+   "Content": "The Mongol Empire",
+   "Combined": "Which empire was ruled by Genghis Khan? The Mongol Empire."
+ },
+ {
+   "ID": 20,
+   "Category": "History Fact",
+   "Title": "When did the American Civil War start?",
+   "Content": "1861",
+   "Combined": "When did the American Civil War start? 1861."
+ },
+ {
+   "ID": 21,
+   "Category": "History Fact",
+   "Title": "Who was the first female pharaoh of Egypt?",
+   "Content": "Hatshepsut was one of the earliest and most successful female pharaohs.",
+   "Combined": "Who was the first female pharaoh of Egypt? Hatshepsut was one of the earliest and most successful female pharaohs."
+ },
+ {
+   "ID": 22,
+   "Category": "History Fact",
+   "Title": "What ancient city was buried by a volcanic eruption in 79 AD?",
+   "Content": "Pompeii was buried under ash when Mount Vesuvius erupted.",
+   "Combined": "What ancient city was buried by a volcanic eruption in 79 AD? Pompeii was buried under ash when Mount Vesuvius erupted."
+ },
+ {
+   "ID": 23,
+   "Category": "History Fact",
+   "Title": "Who wrote the Declaration of Independence?",
+   "Content": "Thomas Jefferson was the principal author of the Declaration of Independence.",
+   "Combined": "Who wrote the Declaration of Independence? Thomas Jefferson was the principal author of the Declaration of Independence."
+ },
+ {
+   "ID": 24,
+   "Category": "History Fact",
+   "Title": "What major wall was torn down in 1989?",
+   "Content": "The Berlin Wall, symbol of the Cold War, was dismantled in 1989.",
+   "Combined": "What major wall was torn down in 1989? The Berlin Wall, symbol of the Cold War, was dismantled in 1989."
+ },
+ {
+   "ID": 25,
+   "Category": "History Fact",
+   "Title": "What was the Black Death?",
+   "Content": "A devastating global epidemic of bubonic plague that struck Europe and Asia in the mid-1300s.",
+   "Combined": "What was the Black Death? A devastating global epidemic of bubonic plague that struck Europe and Asia in the mid-1300s."
+ },
+ {
+   "ID": 26,
+   "Category": "History Fact",
+   "Title": "Who discovered penicillin?",
+   "Content": "Alexander Fleming discovered penicillin in 1928.",
+   "Combined": "Who discovered penicillin? Alexander Fleming discovered penicillin in 1928."
+ },
+ {
+   "ID": 27,
+   "Category": "History Fact",
+   "Title": "When was the U.S. Constitution signed?",
+   "Content": "The Constitution was signed on September 17, 1787.",
+   "Combined": "When was the U.S. Constitution signed? The Constitution was signed on September 17, 1787."
+ },
+ {
+   "ID": 28,
+   "Category": "History Fact",
+   "Title": "What triggered World War I?",
+   "Content": "The assassination of Archduke Franz Ferdinand in 1914.",
+   "Combined": "What triggered World War I? The assassination of Archduke Franz Ferdinand in 1914."
+ },
+ {
+   "ID": 29,
+   "Category": "History Fact",
+   "Title": "Who was the first emperor of Rome?",
+   "Content": "Augustus Caesar was the first Roman emperor.",
+   "Combined": "Who was the first emperor of Rome? Augustus Caesar was the first Roman emperor."
+ },
+ {
+   "ID": 30,
+   "Category": "History Fact",
+   "Title": "What was the Trail of Tears?",
+   "Content": "The forced relocation of Native Americans resulting in thousands of deaths.",
+   "Combined": "What was the Trail of Tears? The forced relocation of Native Americans resulting in thousands of deaths."
+ },
+ {
+   "ID": 31,
+   "Category": "History Fact",
+   "Title": "Aztec Human Sacrifice",
+   "Content": "The Aztecs performed human sacrifices to appease their gods, sometimes thousands in a single event.",
+   "Combined": "The Aztecs performed human sacrifices to appease their gods, sometimes thousands in a single event."
+ },
+ {
+   "ID": 32,
+   "Category": "History Fact",
+   "Title": "The Original Marathon",
+   "Content": "The first marathon commemorates a Greek soldier running from Marathon to Athens, about 26 miles, to deliver news of victory.",
+   "Combined": "The first marathon commemorates a Greek soldier running from Marathon to Athens, about 26 miles, to deliver news of victory."
+ },
+ {
+   "ID": 33,
+   "Category": "History Fact",
+   "Title": "Cleopatra’s Time Is Closer to Us",
+   "Content": "Cleopatra VII lived closer in time to the moon landing than to the construction of the Great Pyramid.",
+   "Combined": "Cleopatra lived closer to the moon landing than to the Great Pyramid’s construction."
+ },
+ {
+   "ID": 34,
+   "Category": "History Fact",
+   "Title": "Genghis Khan’s DNA",
+   "Content": "Genghis Khan has so many descendants that about 1 in 200 men worldwide are his direct genetic descendants.",
+   "Combined": "About 1 in 200 men today are direct descendants of Genghis Khan."
+ },
+ {
+   "ID": 35,
+   "Category": "History Fact",
+   "Title": "Anne Frank and MLK Were Born Same Year",
+   "Content": "Anne Frank and Martin Luther King Jr. were both born in 1929.",
+   "Combined": "Anne Frank and Martin Luther King Jr. were both born in 1929."
+ },
+ {
+   "ID": 36,
+   "Category": "History Fact",
+   "Title": "Ancient Romans Used Gladiator Sweat",
+   "Content": "Ancient Romans collected perspiration from gladiators and sold it as a cosmetic product.",
+   "Combined": "Ancient Romans collected gladiator sweat and sold it as an aphrodisiac."
+ },
+ {
+   "ID": 37,
+   "Category": "History Fact",
+   "Title": "Mansa Musa, the Richest Man",
+   "Content": "Mansa Musa of Mali was so wealthy in the 14th century that his generosity disrupted local economies.",
+   "Combined": "Mansa Musa of 14th-century Mali was so wealthy his gifts disrupted economies."
+ },
+ {
+   "ID": 38,
+   "Category": "History Fact",
+   "Title": "The First Vending Machine",
+   "Content": "The first vending machine, in ancient Alexandria, dispensed holy water.",
+   "Combined": "The first vending machine in ancient Alexandria dispensed holy water."
+ },
+ {
+   "ID": 39,
+   "Category": "History Fact",
+   "Title": "George Washington’s Dentures",
+   "Content": "George Washington’s dentures were not wood, but made from human, animal teeth, and other materials.",
+   "Combined": "Washington’s dentures were made from human, animal teeth, and more—never wood."
+ },
+ {
+   "ID": 40,
+   "Category": "History Fact",
+   "Title": "The Dancing Plague of 1518",
+   "Content": "In 1518, people in Strasbourg danced uncontrollably for days; some even died of exhaustion.",
+   "Combined": "During the Dancing Plague of 1518, people in Strasbourg danced until they collapsed from exhaustion."
+ },
+ {
+   "ID": 91,
+   "Category": "History Fact",
+   "Title": "The Wright brothers made the first powered flight",
+   "Content": "It lasted 12 seconds in 1903.",
+   "Combined": "The Wright brothers made the first powered flight in 1903. It lasted 12 seconds."
+ },
+ {
+   "ID": 92,
+   "Category": "History Fact",
+   "Title": "The Magna Carta was signed",
+   "Content": "It happened in 1215 and limited the powers of the English king.",
+   "Combined": "The Magna Carta was signed in 1215, limiting the powers of the English king."
+ },
+ {
+   "ID": 93,
+   "Category": "History Fact",
+   "Title": "The Cold War began after WWII",
+   "Content": "It was a period of political tension between the U.S. and Soviet Union.",
+   "Combined": "The Cold War began after WWII and was a period of political tension between the U.S. and Soviet Union."
+ },
+ {
+   "ID": 94,
+   "Category": "History Fact",
+   "Title": "The Berlin Wall fell in 1989",
+   "Content": "It marked the end of the Cold War and German reunification.",
+   "Combined": "The Berlin Wall fell in 1989, marking the end of the Cold War and German reunification."
+ },
+ {
+   "ID": 95,
+   "Category": "History Fact",
+   "Title": "The Black Death killed millions",
+   "Content": "It struck Europe in the 14th century, killing about 1/3 of the population.",
+   "Combined": "The Black Death killed about 1/3 of Europe's population in the 14th century."
+ },
+ {
+   "ID": 96,
+   "Category": "History Fact",
+   "Title": "Julius Caesar was assassinated in 44 BCE",
+   "Content": "His death led to the fall of the Roman Republic.",
+   "Combined": "Julius Caesar was assassinated in 44 BCE, leading to the fall of the Roman Republic."
+ },
+ {
+   "ID": 97,
+   "Category": "History Fact",
+   "Title": "The Titanic sank in 1912",
+   "Content": "It was one of the deadliest commercial peacetime maritime disasters.",
+   "Combined": "The Titanic sank in 1912 in one of the deadliest commercial maritime disasters."
+ },
+ {
+   "ID": 98,
+   "Category": "History Fact",
+   "Title": "Women gained the right to vote in the U.S. in 1920",
+   "Content": "The 19th Amendment granted this right after decades of activism.",
+   "Combined": "In 1920, the 19th Amendment gave women the right to vote in the U.S."
+ },
+ {
+   "ID": 99,
+   "Category": "History Fact",
+   "Title": "The Great Depression began in 1929",
+   "Content": "It started with the stock market crash and lasted a decade.",
+   "Combined": "The Great Depression began with the 1929 stock market crash and lasted a decade."
+ },
+ {
+   "ID": 100,
+   "Category": "History Fact",
+   "Title": "The Declaration of Independence was signed in 1776",
+   "Content": "It marked the beginning of the United States as an independent nation.",
+   "Combined": "The Declaration of Independence was signed in 1776, marking the U.S.'s birth."
+ },
+ {
+   "ID": 1,
+   "Category": "Quote",
+   "Title": "Albert Einstein",
+   "Content": "Imagination is more important than knowledge.",
+   "Combined": "Imagination is more important than knowledge. – Albert Einstein"
+ },
+ {
+   "ID": 2,
+   "Category": "Quote",
+   "Title": "Isaac Newton",
+   "Content": "If I have seen further, it is by standing on the shoulders of giants.",
+   "Combined": "If I have seen further, it is by standing on the shoulders of giants. – Isaac Newton"
+ },
+ {
+   "ID": 3,
+   "Category": "Quote",
+   "Title": "Socrates",
+   "Content": "The unexamined life is not worth living.",
+   "Combined": "The unexamined life is not worth living. – Socrates"
+ },
+ {
+   "ID": 4,
+   "Category": "Quote",
+   "Title": "Marie Curie",
+   "Content": "Nothing in life is to be feared, it is only to be understood.",
+   "Combined": "Nothing in life is to be feared, it is only to be understood. – Marie Curie"
+ },
+ {
+   "ID": 5,
+   "Category": "Quote",
+   "Title": "Mark Twain",
+   "Content": "The secret of getting ahead is getting started.",
+   "Combined": "The secret of getting ahead is getting started. – Mark Twain"
+ },
+ {
+   "ID": 6,
+   "Category": "Quote",
+   "Title": "Eleanor Roosevelt",
+   "Content": "No one can make you feel inferior without your consent.",
+   "Combined": "No one can make you feel inferior without your consent. – Eleanor Roosevelt"
+ },
+ {
+   "ID": 7,
+   "Category": "Quote",
+   "Title": "Confucius",
+   "Content": "It does not matter how slowly you go as long as you do not stop.",
+   "Combined": "It does not matter how slowly you go as long as you do not stop. – Confucius"
+ },
+ {
+   "ID": 8,
+   "Category": "Quote",
+   "Title": "Nikola Tesla",
+   "Content": "The present is theirs; the future, for which I really worked, is mine.",
+   "Combined": "The present is theirs; the future, for which I really worked, is mine. – Nikola Tesla"
+ },
+ {
+   "ID": 9,
+   "Category": "Quote",
+   "Title": "Carl Sagan",
+   "Content": "Somewhere, something incredible is waiting to be known.",
+   "Combined": "Somewhere, something incredible is waiting to be known. – Carl Sagan"
+ },
+ {
+   "ID": 10,
+   "Category": "Quote",
+   "Title": "Aristotle",
+   "Content": "Knowing yourself is the beginning of all wisdom.",
+   "Combined": "Knowing yourself is the beginning of all wisdom. – Aristotle"
+ },
+ {
+   "ID": 11,
+   "Category": "Quote",
+   "Title": "Leonardo da Vinci",
+   "Content": "Simplicity is the ultimate sophistication.",
+   "Combined": "Simplicity is the ultimate sophistication. – Leonardo da Vinci"
+ },
+ {
+   "ID": 12,
+   "Category": "Quote",
+   "Title": "Bertrand Russell",
+   "Content": "The good life is one inspired by love and guided by knowledge.",
+   "Combined": "The good life is one inspired by love and guided by knowledge. – Bertrand Russell"
+ },
+ {
+   "ID": 13,
+   "Category": "Quote",
+   "Title": "Richard Feynman",
+   "Content": "I would rather have questions that can't be answered than answers that can't be questioned.",
+   "Combined": "I would rather have questions that can't be answered than answers that can't be questioned. – Richard Feynman"
+ },
+ {
+   "ID": 14,
+   "Category": "Quote",
+   "Title": "Johann Wolfgang von Goethe",
+   "Content": "Knowing is not enough; we must apply. Willing is not enough; we must do.",
+   "Combined": "Knowing is not enough; we must apply. Willing is not enough; we must do. – Johann Wolfgang von Goethe"
+ },
+ {
+   "ID": 15,
+   "Category": "Quote",
+   "Title": "Plato",
+   "Content": "Reality is created by the mind. We can change our reality by changing our mind.",
+   "Combined": "Reality is created by the mind. We can change our reality by changing our mind. – Plato"
+ },
+ {
+   "ID": 16,
+   "Category": "Quote",
+   "Title": "Maya Angelou",
+   "Content": "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
+   "Combined": "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel. – Maya Angelou"
+ },
+ {
+   "ID": 17,
+   "Category": "Quote",
+   "Title": "Thomas Edison",
+   "Content": "Genius is one percent inspiration and ninety-nine percent perspiration.",
+   "Combined": "Genius is one percent inspiration and ninety-nine percent perspiration. – Thomas Edison"
+ },
+ {
+   "ID": 18,
+   "Category": "Quote",
+   "Title": "Marcus Aurelius",
+   "Content": "You have power over your mind – not outside events. Realize this, and you will find strength.",
+   "Combined": "You have power over your mind – not outside events. Realize this, and you will find strength. – Marcus Aurelius"
+ },
+ {
+   "ID": 19,
+   "Category": "Quote",
+   "Title": "Alan Watts",
+   "Content": "The only way to make sense out of change is to plunge into it, move with it, and join the dance.",
+   "Combined": "The only way to make sense out of change is to plunge into it, move with it, and join the dance. – Alan Watts"
+ },
+ {
+   "ID": 20,
+   "Category": "Quote",
+   "Title": "Blaise Pascal",
+   "Content": "All of humanity's problems stem from man's inability to sit quietly in a room alone.",
+   "Combined": "All of humanity's problems stem from man's inability to sit quietly in a room alone. – Blaise Pascal"
+ },
+ {
+   "ID": 21,
+   "Category": "Quote",
+   "Title": "Aristotle",
+   "Content": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+   "Combined": "We are what we repeatedly do. Excellence, then, is not an act, but a habit. – Aristotle"
+ },
+ {
+   "ID": 22,
+   "Category": "Quote",
+   "Title": "Stephen Hawking",
+   "Content": "Intelligence is the ability to adapt to change.",
+   "Combined": "Intelligence is the ability to adapt to change. – Stephen Hawking"
+ },
+ {
+   "ID": 23,
+   "Category": "Quote",
+   "Title": "Nikola Tesla",
+   "Content": "If you want to find the secrets of the universe, think in terms of energy, frequency and vibration.",
+   "Combined": "If you want to find the secrets of the universe, think in terms of energy, frequency and vibration. – Nikola Tesla"
+ },
+ {
+   "ID": 24,
+   "Category": "Quote",
+   "Title": "Carl Sagan",
+   "Content": "Somewhere, something incredible is waiting to be known.",
+   "Combined": "Somewhere, something incredible is waiting to be known. – Carl Sagan"
+ },
+ {
+   "ID": 25,
+   "Category": "Quote",
+   "Title": "Eleanor Roosevelt",
+   "Content": "The future belongs to those who believe in the beauty of their dreams.",
+   "Combined": "The future belongs to those who believe in the beauty of their dreams. – Eleanor Roosevelt"
+ },
+ {
+   "ID": 26,
+   "Category": "Quote",
+   "Title": "Sun Tzu",
+   "Content": "In the midst of chaos, there is also opportunity.",
+   "Combined": "In the midst of chaos, there is also opportunity. – Sun Tzu"
+ },
+ {
+   "ID": 27,
+   "Category": "Quote",
+   "Title": "Marie Curie",
+   "Content": "Nothing in life is to be feared, it is only to be understood.",
+   "Combined": "Nothing in life is to be feared, it is only to be understood. – Marie Curie"
+ },
+ {
+   "ID": 28,
+   "Category": "Quote",
+   "Title": "Alan Turing",
+   "Content": "Those who can imagine anything, can create the impossible.",
+   "Combined": "Those who can imagine anything, can create the impossible. – Alan Turing"
+ },
+ {
+   "ID": 29,
+   "Category": "Quote",
+   "Title": "Lao Tzu",
+   "Content": "Knowing others is intelligence; knowing yourself is true wisdom.",
+   "Combined": "Knowing others is intelligence; knowing yourself is true wisdom. – Lao Tzu"
+ },
+ {
+   "ID": 30,
+   "Category": "Quote",
+   "Title": "Socrates",
+   "Content": "The unexamined life is not worth living.",
+   "Combined": "The unexamined life is not worth living. – Socrates"
+ },
+ {
+   "ID": 31,
+   "Category": "Quote",
+   "Title": "Richard Feynman",
+   "Content": "I would rather have questions that can't be answered than answers that can't be questioned.",
+   "Combined": "I would rather have questions that can't be answered than answers that can't be questioned. – Richard Feynman"
+ },
+ {
+   "ID": 32,
+   "Category": "Quote",
+   "Title": "Rosa Parks",
+   "Content": "I have learned over the years that when one's mind is made up, this diminishes fear.",
+   "Combined": "I have learned over the years that when one's mind is made up, this diminishes fear. – Rosa Parks"
+ },
+ {
+   "ID": 33,
+   "Category": "Quote",
+   "Title": "Thomas Edison",
+   "Content": "I have not failed. I've just found 10,000 ways that won't work.",
+   "Combined": "I have not failed. I've just found 10,000 ways that won't work. – Thomas Edison"
+ },
+ {
+   "ID": 34,
+   "Category": "Quote",
+   "Title": "Neil deGrasse Tyson",
+   "Content": "The good thing about science is that it's true whether or not you believe in it.",
+   "Combined": "The good thing about science is that it's true whether or not you believe in it. – Neil deGrasse Tyson"
+ },
+ {
+   "ID": 35,
+   "Category": "Quote",
+   "Title": "Confucius",
+   "Content": "It does not matter how slowly you go as long as you do not stop.",
+   "Combined": "It does not matter how slowly you go as long as you do not stop. – Confucius"
+ },
+ {
+   "ID": 36,
+   "Category": "Quote",
+   "Title": "Mark Twain",
+   "Content": "Courage is resistance to fear, mastery of fear—not absence of fear.",
+   "Combined": "Courage is resistance to fear, mastery of fear—not absence of fear. – Mark Twain"
+ },
+ {
+   "ID": 37,
+   "Category": "Quote",
+   "Title": "Jane Goodall",
+   "Content": "What you do makes a difference, and you have to decide what kind of difference you want to make.",
+   "Combined": "What you do makes a difference, and you have to decide what kind of difference you want to make. – Jane Goodall"
+ },
+ {
+   "ID": 38,
+   "Category": "Quote",
+   "Title": "Viktor Frankl",
+   "Content": "Those who have a 'why' to live, can bear almost any 'how'.",
+   "Combined": "Those who have a 'why' to live, can bear almost any 'how'. – Viktor Frankl"
+ },
+ {
+   "ID": 39,
+   "Category": "Quote",
+   "Title": "Leonardo da Vinci",
+   "Content": "Learning never exhausts the mind.",
+   "Combined": "Learning never exhausts the mind. – Leonardo da Vinci"
+ },
+ {
+   "ID": 40,
+   "Category": "Quote",
+   "Title": "Malcolm X",
+   "Content": "Education is the passport to the future, for tomorrow belongs to those who prepare for it today.",
+   "Combined": "Education is the passport to the future, for tomorrow belongs to those who prepare for it today. – Malcolm X"
+ },
+ {
+   "ID": 41,
+   "Category": "Quote",
+   "Title": "Carl Jung",
+   "Content": "Who looks outside, dreams; who looks inside, awakes.",
+   "Combined": "Who looks outside, dreams; who looks inside, awakes. – Carl Jung"
+ },
+ {
+   "ID": 42,
+   "Category": "Quote",
+   "Title": "Marie Curie",
+   "Content": "Nothing in life is to be feared, it is only to be understood.",
+   "Combined": "Nothing in life is to be feared, it is only to be understood. – Marie Curie"
+ },
+ {
+   "ID": 43,
+   "Category": "Quote",
+   "Title": "Maya Angelou",
+   "Content": "Do the best you can until you know better. Then when you know better, do better.",
+   "Combined": "Do the best you can until you know better. Then when you know better, do better. – Maya Angelou"
+ },
+ {
+   "ID": 44,
+   "Category": "Quote",
+   "Title": "Blaise Pascal",
+   "Content": "All of humanity's problems stem from man's inability to sit quietly in a room alone.",
+   "Combined": "All of humanity's problems stem from man's inability to sit quietly in a room alone. – Blaise Pascal"
+ },
+ {
+   "ID": 45,
+   "Category": "Quote",
+   "Title": "Seneca",
+   "Content": "We suffer more in imagination than in reality.",
+   "Combined": "We suffer more in imagination than in reality. – Seneca"
+ },
+ {
+   "ID": 46,
+   "Category": "Quote",
+   "Title": "Eleanor Roosevelt",
+   "Content": "The future belongs to those who believe in the beauty of their dreams.",
+   "Combined": "The future belongs to those who believe in the beauty of their dreams. – Eleanor Roosevelt"
+ },
+ {
+   "ID": 47,
+   "Category": "Quote",
+   "Title": "Nikola Tesla",
+   "Content": "If you want to find the secrets of the universe, think in terms of energy, frequency and vibration.",
+   "Combined": "If you want to find the secrets of the universe, think in terms of energy, frequency and vibration. – Nikola Tesla"
+ },
+ {
+   "ID": 48,
+   "Category": "Quote",
+   "Title": "Stephen Hawking",
+   "Content": "Intelligence is the ability to adapt to change.",
+   "Combined": "Intelligence is the ability to adapt to change. – Stephen Hawking"
+ },
+ {
+   "ID": 49,
+   "Category": "Quote",
+   "Title": "Marcus Aurelius",
+   "Content": "The happiness of your life depends upon the quality of your thoughts.",
+   "Combined": "The happiness of your life depends upon the quality of your thoughts. – Marcus Aurelius"
+ },
+ {
+   "ID": 50,
+   "Category": "Quote",
+   "Title": "Helen Keller",
+   "Content": "Although the world is full of suffering, it is also full of the overcoming of it.",
+   "Combined": "Although the world is full of suffering, it is also full of the overcoming of it. – Helen Keller"
+ },
+ {
+   "ID": 51,
+   "Category": "Quote",
+   "Title": "Isaac Newton",
+   "Content": "If I have seen further it is by standing on the shoulders of giants.",
+   "Combined": "If I have seen further it is by standing on the shoulders of giants. – Isaac Newton"
+ },
+ {
+   "ID": 52,
+   "Category": "Quote",
+   "Title": "Alan Watts",
+   "Content": "The menu is not the meal.",
+   "Combined": "The menu is not the meal. – Alan Watts"
+ },
+ {
+   "ID": 53,
+   "Category": "Quote",
+   "Title": "Abraham Maslow",
+   "Content": "In any given moment we have two options: to step forward into growth or to step back into safety.",
+   "Combined": "In any given moment we have two options: to step forward into growth or to step back into safety. – Abraham Maslow"
+ },
+ {
+   "ID": 54,
+   "Category": "Quote",
+   "Title": "George Bernard Shaw",
+   "Content": "Progress is impossible without change, and those who cannot change their minds cannot change anything.",
+   "Combined": "Progress is impossible without change, and those who cannot change their minds cannot change anything. – George Bernard Shaw"
+ },
+ {
+   "ID": 55,
+   "Category": "Quote",
+   "Title": "Søren Kierkegaard",
+   "Content": "Life can only be understood backwards; but it must be lived forwards.",
+   "Combined": "Life can only be understood backwards; but it must be lived forwards. – Søren Kierkegaard"
+ },
+ {
+   "ID": 56,
+   "Category": "Quote",
+   "Title": "Jean-Paul Sartre",
+   "Content": "Man is nothing else but what he makes of himself.",
+   "Combined": "Man is nothing else but what he makes of himself. – Jean-Paul Sartre"
+ },
+ {
+   "ID": 57,
+   "Category": "Quote",
+   "Title": "Aldous Huxley",
+   "Content": "Experience is not what happens to a man; it is what a man does with what happens to him.",
+   "Combined": "Experience is not what happens to a man; it is what a man does with what happens to him. – Aldous Huxley"
+ },
+ {
+   "ID": 58,
+   "Category": "Quote",
+   "Title": "Hypatia",
+   "Content": "Reserve your right to think, for even to think wrongly is better than not to think at all.",
+   "Combined": "Reserve your right to think, for even to think wrongly is better than not to think at all. – Hypatia"
+ },
+ {
+   "ID": 59,
+   "Category": "Quote",
+   "Title": "Confucius",
+   "Content": "It does not matter how slowly you go as long as you do not stop.",
+   "Combined": "It does not matter how slowly you go as long as you do not stop. – Confucius"
+ },
+ {
+   "ID": 60,
+   "Category": "Quote",
+   "Title": "Cicero",
+   "Content": "A room without books is like a body without a soul.",
+   "Combined": "A room without books is like a body without a soul. – Cicero"
+ },
+ {
+   "ID": 61,
+   "Category": "Quote",
+   "Title": "Simone de Beauvoir",
+   "Content": "Change your life today. Don't gamble on the future, act now, without delay.",
+   "Combined": "Change your life today. Don't gamble on the future, act now, without delay. – Simone de Beauvoir"
+ },
+ {
+   "ID": 62,
+   "Category": "Quote",
+   "Title": "Leonardo da Vinci",
+   "Content": "Learning never exhausts the mind.",
+   "Combined": "Learning never exhausts the mind. – Leonardo da Vinci"
+ },
+ {
+   "ID": 63,
+   "Category": "Quote",
+   "Title": "Nikola Tesla",
+   "Content": "If you want to find the secrets of the universe, think in terms of energy, frequency, and vibration.",
+   "Combined": "If you want to find the secrets of the universe, think in terms of energy, frequency, and vibration. – Nikola Tesla"
+ },
+ {
+   "ID": 64,
+   "Category": "Quote",
+   "Title": "Carl Jung",
+   "Content": "Your vision will become clear only when you look into your heart. Who looks outside, dreams; who looks inside",
+   "Combined": ""
+ },
+ {
+   "ID": 65,
+   "Category": "Quote",
+   "Title": "Virginia Woolf",
+   "Content": "Lock up your libraries if you like; but there is no gate, no lock, no bolt that you can set upon the freedom of my mind.",
+   "Combined": "Lock up your libraries if you like; but there is no gate, no lock, no bolt that you can set upon the freedom of my mind. – Virginia Woolf"
+ },
+ {
+   "ID": 66,
+   "Category": "Quote",
+   "Title": "George Orwell",
+   "Content": "In a time of deceit, telling the truth is a revolutionary act.",
+   "Combined": "In a time of deceit, telling the truth is a revolutionary act. – George Orwell"
+ },
+ {
+   "ID": 67,
+   "Category": "Quote",
+   "Title": "Karl Popper",
+   "Content": "True ignorance is not the absence of knowledge, but the refusal to acquire it.",
+   "Combined": "True ignorance is not the absence of knowledge, but the refusal to acquire it. – Karl Popper"
+ },
+ {
+   "ID": 68,
+   "Category": "Quote",
+   "Title": "Arthur Schopenhauer",
+   "Content": "Talent hits a target no one else can hit; genius hits a target no one else can see.",
+   "Combined": "Talent hits a target no one else can hit; genius hits a target no one else can see. – Arthur Schopenhauer"
+ },
+ {
+   "ID": 69,
+   "Category": "Quote",
+   "Title": "Spinoza",
+   "Content": "The more you struggle to live, the less you live. Give up the notion that you must be sure of what you are doing.",
+   "Combined": "The more you struggle to live, the less you live. – Baruch Spinoza"
+ },
+ {
+   "ID": 70,
+   "Category": "Quote",
+   "Title": "Hannah Arendt",
+   "Content": "The most radical revolutionary will become a conservative the day after the revolution.",
+   "Combined": "The most radical revolutionary will become a conservative the day after the revolution. – Hannah Arendt"
+ },
+ {
+   "ID": 71,
+   "Category": "Quote",
+   "Title": "James Baldwin",
+   "Content": "Not everything that is faced can be changed. But nothing can be changed until it is faced.",
+   "Combined": "Not everything that is faced can be changed. But nothing can be changed until it is faced. – James Baldwin"
+ },
+ {
+   "ID": 72,
+   "Category": "Quote",
+   "Title": "Audre Lorde",
+   "Content": "Your silence will not protect you.",
+   "Combined": "Your silence will not protect you. – Audre Lorde"
+ },
+ {
+   "ID": 73,
+   "Category": "Quote",
+   "Title": "Heraclitus",
+   "Content": "No man ever steps in the same river twice, for it's not the same river and he's not the same man.",
+   "Combined": "No man ever steps in the same river twice, for it's not the same river and he's not the same man. – Heraclitus"
+ },
+ {
+   "ID": 74,
+   "Category": "Quote",
+   "Title": "Pythagoras",
+   "Content": "Do not say a little in many words but a great deal in few.",
+   "Combined": "Do not say a little in many words but a great deal in few. – Pythagoras"
+ },
+ {
+   "ID": 75,
+   "Category": "Quote",
+   "Title": "Simone de Beauvoir",
+   "Content": "Change your life today. Don’t gamble on the future, act now, without delay.",
+   "Combined": "Change your life today. Don’t gamble on the future, act now, without delay. – Simone de Beauvoir"
+ },
+ {
+   "ID": 76,
+   "Category": "Quote",
+   "Title": "Rosa Luxemburg",
+   "Content": "Those who do not move, do not notice their chains.",
+   "Combined": "Those who do not move, do not notice their chains. – Rosa Luxemburg"
+ },
+ {
+   "ID": 77,
+   "Category": "Quote",
+   "Title": "Emily Dickinson",
+   "Content": "Forever is composed of nows.",
+   "Combined": "Forever is composed of nows. – Emily Dickinson"
+ },
+ {
+   "ID": 78,
+   "Category": "Quote",
+   "Title": "Confucius",
+   "Content": "It does not matter how slowly you go as long as you do not stop.",
+   "Combined": "It does not matter how slowly you go as long as you do not stop. – Confucius"
+ },
+ {
+   "ID": 79,
+   "Category": "Quote",
+   "Title": "Voltaire",
+   "Content": "Judge a man by his questions rather than by his answers.",
+   "Combined": "Judge a man by his questions rather than by his answers. – Voltaire"
+ },
+ {
+   "ID": 80,
+   "Category": "Quote",
+   "Title": "Mahatma Gandhi",
+   "Content": "The best way to find yourself is to lose yourself in the service of others.",
+   "Combined": "The best way to find yourself is to lose yourself in the service of others. – Mahatma Gandhi"
+ },
+ {
+   "ID": 81,
+   "Category": "Quote",
+   "Title": "Audre Lorde",
+   "Content": "Your silence will not protect you.",
+   "Combined": "Your silence will not protect you. – Audre Lorde"
+ },
+ {
+   "ID": 82,
+   "Category": "Quote",
+   "Title": "Carl Sagan",
+   "Content": "Somewhere, something incredible is waiting to be known.",
+   "Combined": "Somewhere, something incredible is waiting to be known. – Carl Sagan"
+ },
+ {
+   "ID": 83,
+   "Category": "Quote",
+   "Title": "Nikola Tesla",
+   "Content": "The present is theirs; the future, for which I really worked, is mine.",
+   "Combined": "The present is theirs; the future, for which I really worked, is mine. – Nikola Tesla"
+ },
+ {
+   "ID": 84,
+   "Category": "Quote",
+   "Title": "Leonardo da Vinci",
+   "Content": "Learning never exhausts the mind.",
+   "Combined": "Learning never exhausts the mind. – Leonardo da Vinci"
+ },
+ {
+   "ID": 85,
+   "Category": "Quote",
+   "Title": "Heraclitus",
+   "Content": "No man ever steps in the same river twice, for it’s not the same river and he’s not the same man.",
+   "Combined": "No man ever steps in the same river twice, for it’s not the same river and he’s not the same man. – Heraclitus"
+ },
+ {
+   "ID": 86,
+   "Category": "Quote",
+   "Title": "Alan Watts",
+   "Content": "Trying to define yourself is like trying to bite your own teeth.",
+   "Combined": "Trying to define yourself is like trying to bite your own teeth. – Alan Watts"
+ },
+ {
+   "ID": 87,
+   "Category": "Quote",
+   "Title": "Zora Neale Hurston",
+   "Content": "There are years that ask questions and years that answer.",
+   "Combined": "There are years that ask questions and years that answer. – Zora Neale Hurston"
+ },
+ {
+   "ID": 88,
+   "Category": "Quote",
+   "Title": "Albert Camus",
+   "Content": "Real generosity toward the future lies in giving all to the present.",
+   "Combined": "Real generosity toward the future lies in giving all to the present. – Albert Camus"
+ },
+ {
+   "ID": 89,
+   "Category": "Quote",
+   "Title": "Bruce Lee",
+   "Content": "Absorb what is useful, discard what is not, add what is uniquely your own.",
+   "Combined": "Absorb what is useful, discard what is not, add what is uniquely your own. – Bruce Lee"
+ },
+ {
+   "ID": 90,
+   "Category": "Quote",
+   "Title": "Lao Tzu",
+   "Content": "Knowing others is intelligence; knowing yourself is true wisdom.",
+   "Combined": "Knowing others is intelligence; knowing yourself is true wisdom. – Lao Tzu"
+ },
+ {
+   "ID": 1,
+   "Category": "Science Fact",
+   "Title": "Lightning’s Heat",
+   "Content": "Lightning can heat the air around it to 5 times hotter than the surface of the sun.",
+   "Combined": "Lightning can heat the air around it to 5 times hotter than the surface of the sun."
+ },
+ {
+   "ID": 2,
+   "Category": "Science Fact",
+   "Title": "DNA’s Length",
+   "Content": "If uncoiled, all the DNA in your body could stretch from the Earth to the Sun and back—about 600 times.",
+   "Combined": "If uncoiled, all the DNA in your body could stretch from the Earth to the Sun and back—about 600 times."
+ },
+ {
+   "ID": 3,
+   "Category": "Science Fact",
+   "Title": "Bone Strength",
+   "Content": "Ounce for ounce, human bones are stronger than steel.",
+   "Combined": "Ounce for ounce, human bones are stronger than steel."
+ },
+ {
+   "ID": 4,
+   "Category": "Science Fact",
+   "Title": "Jellyfish Immortality",
+   "Content": "Some jellyfish can biologically revert to earlier life stages, making them potentially immortal.",
+   "Combined": "Some jellyfish can biologically revert to earlier life stages, making them potentially immortal."
+ },
+ {
+   "ID": 5,
+   "Category": "Science Fact",
+   "Title": "Space is Noisy",
+   "Content": "Space is silent, but certain instruments can \"hear\" space by detecting radio waves and turning them into sound.",
+   "Combined": "Space is silent, but certain instruments can \"hear\" space by detecting radio waves and turning them into sound."
+ },
+ {
+   "ID": 6,
+   "Category": "Science Fact",
+   "Title": "Ocean Depth Pressure",
+   "Content": "At the deepest part of the ocean, the pressure is over 1,000 times the standard atmospheric pressure.",
+   "Combined": "At the deepest part of the ocean, the pressure is over 1,000 times the standard atmospheric pressure."
+ },
+ {
+   "ID": 7,
+   "Category": "Science Fact",
+   "Title": "Banana Radiation",
+   "Content": "Bananas contain potassium-40, a radioactive isotope, and are slightly radioactive.",
+   "Combined": "Bananas contain potassium-40, a radioactive isotope, and are slightly radioactive."
+ },
+ {
+   "ID": 8,
+   "Category": "Science Fact",
+   "Title": "Eye Resolution",
+   "Content": "The human eye can see roughly 576 megapixels worth of detail.",
+   "Combined": "The human eye can see roughly 576 megapixels worth of detail."
+ },
+ {
+   "ID": 9,
+   "Category": "Science Fact",
+   "Title": "Octopus Hearts",
+   "Content": "An octopus has three hearts—and when it swims, one of them stops beating.",
+   "Combined": "An octopus has three hearts—and when it swims, one of them stops beating."
+ },
+ {
+   "ID": 10,
+   "Category": "Science Fact",
+   "Title": "Moon Dust Smell",
+   "Content": "Moon dust smells like gunpowder, according to astronauts.",
+   "Combined": "Moon dust smells like gunpowder, according to astronauts."
+ },
+ {
+   "ID": 11,
+   "Category": "Science Fact",
+   "Title": "Blood in Space",
+   "Content": "In zero gravity, your body shifts fluids and your face gets puffy and legs thin out—astronauts call it “chicken legs.”",
+   "Combined": "In zero gravity, your body shifts fluids and your face gets puffy and legs thin out—astronauts call it “chicken legs.”"
+ },
+ {
+   "ID": 12,
+   "Category": "Science Fact",
+   "Title": "Plant Communication",
+   "Content": "Trees can “talk” to each other through underground fungal networks, sharing nutrients and warnings.",
+   "Combined": "Trees can “talk” to each other through underground fungal networks, sharing nutrients and warnings."
+ },
+ {
+   "ID": 13,
+   "Category": "Science Fact",
+   "Title": "Virus Size",
+   "Content": "If you stacked a million viruses end-to-end, they would stretch only about 1 millimeter.",
+   "Combined": "If you stacked a million viruses end-to-end, they would stretch only about 1 millimeter."
+ },
+ {
+   "ID": 14,
+   "Category": "Science Fact",
+   "Title": "Ant Strength",
+   "Content": "Ants can lift up to 50 times their body weight.",
+   "Combined": "Ants can lift up to 50 times their body weight."
+ },
+ {
+   "ID": 15,
+   "Category": "Science Fact",
+   "Title": "Brain Power",
+   "Content": "Your brain uses about 20% of your body’s energy, even though it’s only about 2% of your body weight.",
+   "Combined": "Your brain uses about 20% of your body’s energy, even though it’s only about 2% of your body weight."
+ },
+ {
+   "ID": 16,
+   "Category": "Science Fact",
+   "Title": "Mars Sunsets",
+   "Content": "Sunsets on Mars are blue due to how dust in the atmosphere scatters sunlight.",
+   "Combined": "Sunsets on Mars are blue due to how dust in the atmosphere scatters sunlight."
+ },
+ {
+   "ID": 17,
+   "Category": "Science Fact",
+   "Title": "Bacteria Quantity",
+   "Content": "There are more bacteria in your mouth than there are people on Earth.",
+   "Combined": "There are more bacteria in your mouth than there are people on Earth."
+ },
+ {
+   "ID": 18,
+   "Category": "Science Fact",
+   "Title": "Earth’s Rotation",
+   "Content": "Earth’s rotation is gradually slowing down—about 17 milliseconds every 100 years.",
+   "Combined": "Earth’s rotation is gradually slowing down—about 17 milliseconds every 100 years."
+ },
+ {
+   "ID": 19,
+   "Category": "Science Fact",
+   "Title": "Whale Heart",
+   "Content": "A blue whale’s heart is so big, a human could crawl through its arteries.",
+   "Combined": "A blue whale’s heart is so big, a human could crawl through its arteries."
+ },
+ {
+   "ID": 20,
+   "Category": "Science Fact",
+   "Title": "Quantum Tunneling",
+   "Content": "In quantum physics, particles can pass through barriers without breaking them—called quantum tunneling.",
+   "Combined": "In quantum physics, particles can pass through barriers without breaking them—called quantum tunneling."
+ },
+ {
+   "ID": 21,
+   "Category": "Science Fact",
+   "Title": "Water Memory",
+   "Content": "Water can remain in liquid form below freezing if it’s super clean and undisturbed—called supercooled water.",
+   "Combined": "Water can remain in liquid form below freezing if it’s super clean and undisturbed—called supercooled water."
+ },
+ {
+   "ID": 22,
+   "Category": "Science Fact",
+   "Title": "Spider Silk Strength",
+   "Content": "Spider silk is five times stronger than steel of the same diameter.",
+   "Combined": "Spider silk is five times stronger than steel of the same diameter."
+ },
+ {
+   "ID": 23,
+   "Category": "Science Fact",
+   "Title": "Mitochondria Origin",
+   "Content": "Mitochondria inside your cells were once free-living bacteria that became part of us through symbiosis.",
+   "Combined": "Mitochondria inside your cells were once free-living bacteria that became part of us through symbiosis."
+ },
+ {
+   "ID": 24,
+   "Category": "Science Fact",
+   "Title": "Atom Emptiness",
+   "Content": "Atoms are 99.999999999% empty space.",
+   "Combined": "Atoms are 99.999999999% empty space."
+ },
+ {
+   "ID": 25,
+   "Category": "Science Fact",
+   "Title": "Cockroach Breathing",
+   "Content": "Cockroaches don’t need their mouths to breathe—they breathe through small holes in their body.",
+   "Combined": "Cockroaches don’t need their mouths to breathe—they breathe through small holes in their body."
+ },
+ {
+   "ID": 26,
+   "Category": "Science Fact",
+   "Title": "Water Expands",
+   "Content": "Water expands when it freezes, which is why ice floats.",
+   "Combined": "Water expands when it freezes, which is why ice floats."
+ },
+ {
+   "ID": 27,
+   "Category": "Science Fact",
+   "Title": "Memory Storage",
+   "Content": "The human brain has enough memory to store roughly 2.5 petabytes of data.",
+   "Combined": "The human brain has enough memory to store roughly 2.5 petabytes of data."
+ },
+ {
+   "ID": 28,
+   "Category": "Science Fact",
+   "Title": "Heartbeat Syncing",
+   "Content": "When people sing together, their heartbeats can sync up.",
+   "Combined": "When people sing together, their heartbeats can sync up."
+ },
+ {
+   "ID": 29,
+   "Category": "Science Fact",
+   "Title": "Animal Navigation",
+   "Content": "Some birds can “see” Earth’s magnetic field using a protein in their eyes.",
+   "Combined": "Some birds can “see” Earth’s magnetic field using a protein in their eyes."
+ },
+ {
+   "ID": 30,
+   "Category": "Science Fact",
+   "Title": "Lens in Your Eye",
+   "Content": "The lens in your eye is the only part of your body that has no blood supply—it gets oxygen directly from the air.",
+   "Combined": "The lens in your eye is the only part of your body that has no blood supply—it gets oxygen directly from the air."
+ },
+ {
+   "ID": 31,
+   "Category": "Science Fact",
+   "Title": "Tardigrades",
+   "Content": "Tardigrades (water bears) can survive in space, boiling water, freezing temps, and radiation.",
+   "Combined": "Tardigrades (water bears) can survive in space, boiling water, freezing temps, and radiation."
+ },
+ {
+   "ID": 32,
+   "Category": "Science Fact",
+   "Title": "Octopus Hearts",
+   "Content": "Octopuses have three hearts—two pump blood to the gills, one to the body.",
+   "Combined": "Octopuses have three hearts—two pump blood to the gills, one to the body."
+ },
+ {
+   "ID": 33,
+   "Category": "Science Fact",
+   "Title": "Your Stomach Lining",
+   "Content": "Your stomach replaces its lining every few days to avoid digesting itself.",
+   "Combined": "Your stomach replaces its lining every few days to avoid digesting itself."
+ },
+ {
+   "ID": 34,
+   "Category": "Science Fact",
+   "Title": "Banana Radiation",
+   "Content": "Bananas are slightly radioactive due to their potassium-40 content.",
+   "Combined": "Bananas are slightly radioactive due to their potassium-40 content."
+ },
+ {
+   "ID": 35,
+   "Category": "Science Fact",
+   "Title": "Lightning Heat",
+   "Content": "A bolt of lightning is five times hotter than the surface of the sun.",
+   "Combined": "A bolt of lightning is five times hotter than the surface of the sun."
+ },
+ {
+   "ID": 36,
+   "Category": "Science Fact",
+   "Title": "Airplane Trails",
+   "Content": "Those white streaks planes leave are called contrails—formed when water vapor freezes around exhaust particles.",
+   "Combined": "Those white streaks planes leave are called contrails—formed when water vapor freezes around exhaust particles."
+ },
+ {
+   "ID": 37,
+   "Category": "Science Fact",
+   "Title": "Blood Color",
+   "Content": "Blood inside your body is always red—veins only look blue because of how light penetrates your skin.",
+   "Combined": "Blood inside your body is always red—veins only look blue because of how light penetrates your skin."
+ },
+ {
+   "ID": 38,
+   "Category": "Science Fact",
+   "Title": "Oldest Living Thing",
+   "Content": "The oldest known living organism is a bristlecone pine tree over 4,800 years old.",
+   "Combined": "The oldest known living organism is a bristlecone pine tree over 4,800 years old."
+ },
+ {
+   "ID": 39,
+   "Category": "Science Fact",
+   "Title": "Sharks and Cancer",
+   "Content": "Sharks can get cancer—despite the myth that they’re immune to it.",
+   "Combined": "Sharks can get cancer—despite the myth that they’re immune to it."
+ },
+ {
+   "ID": 40,
+   "Category": "Science Fact",
+   "Title": "Saliva Production",
+   "Content": "Your body makes about one liter of saliva every day.",
+   "Combined": "Your body makes about one liter of saliva every day."
+ },
+ {
+   "ID": 41,
+   "Category": "Science Fact",
+   "Title": "Saturn’s Density",
+   "Content": "Saturn is so light it would float in water—if you could find a big enough tub.",
+   "Combined": "Saturn is so light it would float in water—if you could find a big enough tub."
+ },
+ {
+   "ID": 42,
+   "Category": "Science Fact",
+   "Title": "Solar Wind",
+   "Content": "Every second, the sun releases about a million tons of material in the form of solar wind.",
+   "Combined": "Every second, the sun releases about a million tons of material in the form of solar wind."
+ },
+ {
+   "ID": 43,
+   "Category": "Science Fact",
+   "Title": "Giraffe Pressure",
+   "Content": "Giraffes have special valves in their neck veins to prevent brain damage from blood pressure.",
+   "Combined": "Giraffes have special valves in their neck veins to prevent brain damage from blood pressure."
+ },
+ {
+   "ID": 44,
+   "Category": "Science Fact",
+   "Title": "Sloths and Poop",
+   "Content": "Sloths climb down from trees only once a week to poop—and risk predators just to do it.",
+   "Combined": "Sloths climb down from trees only once a week to poop—and risk predators just to do it."
+ },
+ {
+   "ID": 45,
+   "Category": "Science Fact",
+   "Title": "Memory Formation",
+   "Content": "Every time you recall a memory, your brain rewrites it—memories aren’t perfect recordings.",
+   "Combined": "Every time you recall a memory, your brain rewrites it—memories aren’t perfect recordings."
+ },
+ {
+   "ID": 46,
+   "Category": "Science Fact",
+   "Title": "Butterfly Taste",
+   "Content": "Babies taste with their tongues—**but butterflies taste with their feet**.",
+   "Combined": "Butterflies taste with their feet."
+ },
+ {
+   "ID": 47,
+   "Category": "Science Fact",
+   "Title": "Sound Speed Limit",
+   "Content": "Sound travels about **767 miles per hour** in air—but it moves over **4 times faster in water**.",
+   "Combined": "Sound travels about 767 miles per hour in air—but it moves over 4 times faster in water."
+ },
+ {
+   "ID": 48,
+   "Category": "Science Fact",
+   "Title": "Brain Power",
+   "Content": "Your brain uses **about 20%** of your body’s total energy—**even when you're doing nothing**.",
+   "Combined": "Your brain uses about 20% of your body’s total energy—even when you're doing nothing."
+ },
+ {
+   "ID": 49,
+   "Category": "Science Fact",
+   "Title": "Earth's Core Temp",
+   "Content": "Earth’s inner core is nearly as hot as the **surface of the sun**, around **10,800°F (6,000°C)**.",
+   "Combined": "Earth’s inner core is nearly as hot as the surface of the sun, around 10,800°F (6,000°C)."
+ },
+ {
+   "ID": 50,
+   "Category": "Science Fact",
+   "Title": "Ants & Super Strength",
+   "Content": "Ants can lift **10 to 50 times** their body weight. That’s like you lifting a car... with your teeth.",
+   "Combined": "Ants can lift 10 to 50 times their body weight. That’s like you lifting a car... with your teeth."
+ },
+ {
+   "ID": 51,
+   "Category": "Science Fact",
+   "Title": "Water in Your Body",
+   "Content": "An average adult human is about **60% water**. You're basically a walking water balloon.",
+   "Combined": "An average adult human is about 60% water. You're basically a walking water balloon."
+ },
+ {
+   "ID": 52,
+   "Category": "Science Fact",
+   "Title": "Sugar vs Cocaine",
+   "Content": "In lab rats, **sugar activates the brain’s reward system more than cocaine**. Sweet addiction is real.",
+   "Combined": "In lab rats, sugar activates the brain’s reward system more than cocaine. Sweet addiction is real."
+ },
+ {
+   "ID": 53,
+   "Category": "Science Fact",
+   "Title": "Milk Light",
+   "Content": "Sunlight can destroy the nutrients in milk, which is why **opaque containers are better** than clear ones.",
+   "Combined": "Sunlight can destroy the nutrients in milk, which is why opaque containers are better than clear ones."
+ },
+ {
+   "ID": 54,
+   "Category": "Science Fact",
+   "Title": "Atoms Are Empty Space",
+   "Content": "Atoms are **99.9999999% empty space**. If you removed all the empty space from human bodies, the entire human race could fit in a sugar cube.",
+   "Combined": "Atoms are 99.9999999% empty space. If you removed all the empty space from human bodies, the entire human race could fit in a sugar cube."
+ },
+ {
+   "ID": 55,
+   "Category": "Science Fact",
+   "Title": "Jellyfish Immortality",
+   "Content": "Some jellyfish, like *Turritopsis dohrnii*, can **revert to earlier life stages** and potentially live forever.",
+   "Combined": "Some jellyfish, like Turritopsis dohrnii, can revert to earlier life stages and potentially live forever."
+ },
+ {
+   "ID": 56,
+   "Category": "Science Fact",
+   "Title": "Glass Flow Myth",
+   "Content": "Old glass windows aren't thicker at the bottom because glass flows—**they were just made that way**.",
+   "Combined": "Old glass windows aren't thicker at the bottom because glass flows—they were just made that way."
+ },
+ {
+   "ID": 57,
+   "Category": "Science Fact",
+   "Title": "Lung Surface Area",
+   "Content": "The surface area of your lungs is roughly **the same as a tennis court**. Breathe it in, baby.",
+   "Combined": "The surface area of your lungs is roughly the same as a tennis court. Breathe it in, baby."
+ },
+ {
+   "ID": 58,
+   "Category": "Science Fact",
+   "Title": "Earth’s Magnetic Flip",
+   "Content": "The Earth’s magnetic field **reverses every 200,000 to 300,000 years**. The last one was 780,000 years ago... so we’re overdue.",
+   "Combined": "The Earth’s magnetic field reverses every 200,000 to 300,000 years. The last one was 780,000 years ago... so we’re overdue."
+ },
+ {
+   "ID": 59,
+   "Category": "Science Fact",
+   "Title": "Octopus Brains",
+   "Content": "Octopuses have **nine brains**—one central brain and one in each arm to help control movement.",
+   "Combined": "Octopuses have nine brains—one central brain and one in each arm to help control movement."
+ },
+ {
+   "ID": 60,
+   "Category": "Science Fact",
+   "Title": "Space Smells",
+   "Content": "According to astronauts, **space smells like burnt steak and welding fumes**. Galactic BBQ, anyone?",
+   "Combined": "According to astronauts, space smells like burnt steak and welding fumes. Galactic BBQ, anyone?"
+ },
+ {
+   "ID": 61,
+   "Category": "Science Fact",
+   "Title": "Dust = You",
+   "Content": "About **70–80% of household dust is made of dead skin cells**. You’re basically living in your own exfoliation.",
+   "Combined": "About 70–80% of household dust is made of dead skin cells. You’re basically living in your own exfoliation."
+ },
+ {
+   "ID": 62,
+   "Category": "Science Fact",
+   "Title": "Human Bone Strength",
+   "Content": "Human bone is **five times stronger than steel** by weight. You’re built tougher than you think.",
+   "Combined": "Human bone is five times stronger than steel by weight. You’re built tougher than you think."
+ },
+ {
+   "ID": 63,
+   "Category": "Science Fact",
+   "Title": "Lightning Temp",
+   "Content": "A bolt of lightning is **hotter than the surface of the sun**, reaching up to **50,000°F (27,760°C)**.",
+   "Combined": "A bolt of lightning is hotter than the surface of the sun, reaching up to 50,000°F (27,760°C)."
+ },
+ {
+   "ID": 64,
+   "Category": "Science Fact",
+   "Title": "Sharks Are Older Than Trees",
+   "Content": "Sharks have existed for over **400 million years**. Trees came about **350 million years ago**. Sharks win.",
+   "Combined": "Sharks have existed for over 400 million years. Trees came about 350 million years ago. Sharks win."
+ },
+ {
+   "ID": 65,
+   "Category": "Science Fact",
+   "Title": "Brain Electricity",
+   "Content": "Your brain generates enough electricity to **power a lightbulb**—around 20 watts when awake.",
+   "Combined": "Your brain generates enough electricity to power a lightbulb—around 20 watts when awake."
+ },
+ {
+   "ID": 66,
+   "Category": "Science Fact",
+   "Title": "Redheads and Pain",
+   "Content": "Redheads are more sensitive to thermal pain and require **more anesthesia** during surgery. Blame genetics.",
+   "Combined": "Redheads are more sensitive to thermal pain and require more anesthesia during surgery. Blame genetics."
+ },
+ {
+   "ID": 67,
+   "Category": "Science Fact",
+   "Title": "Crying & Tears",
+   "Content": "There are **three types of tears**: basal (lubrication), reflex (irritants), and emotional.",
+   "Combined": "Crying produces three types of tears: basal, reflex, and emotional."
+ },
+ {
+   "ID": 68,
+   "Category": "Science Fact",
+   "Title": "Solar Flares",
+   "Content": "A single solar flare can release **as much energy as a billion hydrogen bombs**. A real stellar tantrum.",
+   "Combined": "A single solar flare can release as much energy as a billion hydrogen bombs. A real stellar tantrum."
+ },
+ {
+   "ID": 69,
+   "Category": "Science Fact",
+   "Title": "Coffee Power",
+   "Content": "Caffeine blocks a brain chemical called **adenosine**, making you feel more alert. Caffeine doesn’t give energy—it **tricks your brain**.",
+   "Combined": "Caffeine blocks a brain chemical called adenosine, making you feel more alert. Caffeine doesn’t give energy—it tricks your brain."
+ },
+ {
+   "ID": 70,
+   "Category": "Science Fact",
+   "Title": "Yawning",
+   "Content": "Catching a yawn isn’t rude—it’s science. Yawns may be **a form of social bonding and cooling the brain**.",
+   "Combined": "Catching a yawn isn’t rude—it’s science. Yawns may be a form of social bonding and cooling the brain."
+ },
+ {
+   "ID": 71,
+   "Category": "Science Fact",
+   "Title": "Heartbeats",
+   "Content": "Your heart beats about **100,000 times per day**. That’s over **35 million times a year**.",
+   "Combined": "Your heart beats about 100,000 times per day. That’s over 35 million times a year."
+ },
+ {
+   "ID": 72,
+   "Category": "Science Fact",
+   "Title": "Water Memory Myth",
+   "Content": "Despite pseudoscience claims, **water has no memory**. It's good at hydration, not holding grudges.",
+   "Combined": "Despite pseudoscience claims, water has no memory. It's good at hydration, not holding grudges."
+ },
+ {
+   "ID": 73,
+   "Category": "Science Fact",
+   "Title": "Cockroach Survival",
+   "Content": "Cockroaches can survive **without their head for a week**. They only die from dehydration.",
+   "Combined": "Cockroaches can survive without their head for a week. They only die from dehydration."
+ },
+ {
+   "ID": 74,
+   "Category": "Science Fact",
+   "Title": "Fingerprints vs Tongues",
+   "Content": "Fingerprints aren’t unique—**tongue prints are even more distinct** and can be used for ID.",
+   "Combined": "Fingerprints aren’t unique—tongue prints are even more distinct and can be used for ID."
+ },
+ {
+   "ID": 75,
+   "Category": "Science Fact",
+   "Title": "Your Stomach Lining",
+   "Content": "Your stomach has to **regrow its lining every 3–4 days**, or it would digest itself. Hardcore self-defense.",
+   "Combined": "Your stomach has to regrow its lining every 3–4 days, or it would digest itself. Hardcore self-defense."
+ },
+ {
+   "ID": 76,
+   "Category": "Science Fact",
+   "Title": "Eyeball Power",
+   "Content": "Your eyes can distinguish about **10 million different colors**. They're not just pretty—they’re precision tools.",
+   "Combined": "Your eyes can distinguish about 10 million different colors. They're not just pretty—they’re precision tools."
+ },
+ {
+   "ID": 77,
+   "Category": "Science Fact",
+   "Title": "Octopus Hearts",
+   "Content": "Octopuses have **three hearts**—two pump to the gills, and one to the body. That’s a whole lotta love.",
+   "Combined": "Octopuses have three hearts—two pump to the gills, and one to the body. That’s a whole lotta love."
+ },
+ {
+   "ID": 78,
+   "Category": "Science Fact",
+   "Title": "Air Weight",
+   "Content": "The average human breathes in about **13 pints of air every minute**. That’s over **2,000 gallons a day**.",
+   "Combined": "The average human breathes in about 13 pints of air every minute. That’s over 2,000 gallons a day."
+ },
+ {
+   "ID": 79,
+   "Category": "Science Fact",
+   "Title": "Boiling Point Drop",
+   "Content": "Water **boils faster at higher altitudes** because there’s less atmospheric pressure. Mountains cook weird.",
+   "Combined": "Water boils faster at higher altitudes because there’s less atmospheric pressure. Mountains cook weird."
+ },
+ {
+   "ID": 80,
+   "Category": "Science Fact",
+   "Title": "Metallic Hydrogen",
+   "Content": "On Jupiter, hydrogen becomes **a metallic liquid** due to insane pressure—literally a **liquid metal**.",
+   "Combined": "On Jupiter, hydrogen becomes a metallic liquid due to insane pressure—literally a liquid metal."
+ },
+ {
+   "ID": 81,
+   "Category": "Science Fact",
+   "Title": "Hiccups Origins",
+   "Content": "Hiccups are leftovers from our **evolutionary past**—amphibians use similar spasms to breathe.",
+   "Combined": "Hiccups are leftovers from our evolutionary past—amphibians use similar spasms to breathe."
+ },
+ {
+   "ID": 82,
+   "Category": "Science Fact",
+   "Title": "Chemical Memory",
+   "Content": "Every strong memory you have has a **unique chemical signature** in your brain. Emotions leave molecular fingerprints.",
+   "Combined": "Every strong memory you have has a unique chemical signature in your brain. Emotions leave molecular fingerprints."
+ },
+ {
+   "ID": 83,
+   "Category": "Science Fact",
+   "Title": "Sunlight Delay",
+   "Content": "Sunlight takes about **8 minutes and 20 seconds** to reach Earth. You see the Sun as it was 8 minutes ago.",
+   "Combined": "Sunlight takes about 8 minutes and 20 seconds to reach Earth. You see the Sun as it was 8 minutes ago."
+ },
+ {
+   "ID": 84,
+   "Category": "Science Fact",
+   "Title": "Human Bioluminescence",
+   "Content": "Humans actually **emit a faint light**, but it’s **1,000 times weaker than our eyes can detect**.",
+   "Combined": "Humans actually emit a faint light, but it’s 1,000 times weaker than our eyes can detect."
+ },
+ {
+   "ID": 85,
+   "Category": "Science Fact",
+   "Title": "Moon Drifting",
+   "Content": "The Moon is drifting away from Earth at **about 1.5 inches per year**. Don’t worry—we’ve got time.",
+   "Combined": "The Moon is drifting away from Earth at about 1.5 inches per year. Don’t worry—we’ve got time."
+ },
+ {
+   "ID": 86,
+   "Category": "Science Fact",
+   "Title": "Supernova Gold",
+   "Content": "The gold in your jewelry was formed in a **supernova explosion** billions of years ago. Bling from the stars.",
+   "Combined": "The gold in your jewelry was formed in a supernova explosion billions of years ago. Bling from the stars."
+ },
+ {
+   "ID": 87,
+   "Category": "Science Fact",
+   "Title": "Fingernail Growth",
+   "Content": "Fingernails grow **faster on your dominant hand**. That’s right—your working hand gets VIP growth rates.",
+   "Combined": "Fingernails grow faster on your dominant hand. That’s right—your working hand gets VIP growth rates."
+ },
+ {
+   "ID": 88,
+   "Category": "Science Fact",
+   "Title": "Infrared Vision",
+   "Content": "Humans can't see infrared light, but **snakes can**, allowing them to **see heat signatures** in total darkness.",
+   "Combined": "Humans can't see infrared light, but snakes can, allowing them to see heat signatures in total darkness."
+ },
+ {
+   "ID": 89,
+   "Category": "Science Fact",
+   "Title": "Honey Never Spoils",
+   "Content": "**Archaeologists have found 3,000-year-old honey** in Egyptian tombs that's still perfectly edible. Sweet immortality.",
+   "Combined": "Archaeologists have found 3,000-year-old honey in Egyptian tombs that's still perfectly edible. Sweet immortality."
+ },
+ {
+   "ID": 90,
+   "Category": "Science Fact",
+   "Title": "Atoms Are Empty Space",
+   "Content": "If an atom were the size of a stadium, the nucleus would be a marble in the center. **Everything is mostly empty space**.",
+   "Combined": "If an atom were the size of a stadium, the nucleus would be a marble in the center. Everything is mostly empty space."
+ }
+]

@@ -1,0 +1,43 @@
+﻿@page "/"
+
+@using DailyLiftApp.Client.Models
+@using DailyLiftApp.Client.Services
+
+@inject LiftService LiftService
+
+<h1>Daily Lift ☀️</h1>
+
+@if (lift == null)
+{
+    <p>Loading lift...</p>
+}
+else
+{
+    <div class="card p-4 mt-4 shadow">
+        <h3>@lift.Title</h3>
+
+        <p>@lift.Content</p>
+
+        <small>@lift.Category</small>
+    </div>
+
+    <button class="btn btn-primary mt-3"
+            @onclick="GetNewLift">
+        New Lift
+    </button>
+}
+
+@code {
+
+    private LiftItem? lift;
+
+    protected override async Task OnInitializedAsync()
+    {
+        lift = await LiftService.GetRandomLiftAsync();
+    }
+
+    private async Task GetNewLift()
+    {
+        lift = await LiftService.GetRandomLiftAsync();
+    }
+}
