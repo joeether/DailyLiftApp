@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "dailyliftapp-aa3e1",
     "public": "DailyLiftApp/DailyLiftApp.Client/bin/Release/net8.0/publish/wwwroot",
     "ignore": [
       "firebase.json",
