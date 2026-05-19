@@ -8,8 +8,25 @@
 <h1>Daily Lift ☀️</h1>
 
 <style>
-    .card {
+    .lift-card {
+        background: white;
         border-radius: 18px;
+        padding: 24px;
+        margin-top: 20px;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+        border: 1px solid #ddd;
+        max-width: 700px;
+    }
+
+    .lift-title {
+        color: #0b1f4d;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+
+    .lift-category {
+        color: gray;
+        font-size: 0.9rem;
     }
 </style>
 
@@ -38,23 +55,19 @@ else
         }
 
     </div>
-    <div class="card mt-4 shadow-lg border-0">
+    <div class="lift-card shadow-sm">
 
-    <div class="card-body">
+    <h3 class="lift-title">
+        @lift.Title
+    </h3>
 
-        <h3 class="card-title text-primary">
-            @lift.Title
-        </h3>
+    <p>
+        @lift.Content
+    </p>
 
-        <p class="card-text fs-5">
-            @lift.Content
-        </p>
-
-        <small class="text-muted">
-            @lift.Category
-        </small>
-
-    </div>
+    <small class="lift-category">
+        @lift.Category
+    </small>
 
 </div>
 
