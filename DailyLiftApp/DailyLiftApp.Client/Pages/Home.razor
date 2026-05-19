@@ -8,12 +8,8 @@
 <h1>Daily Lift ☀️</h1>
 
 <style>
-    .test-card {
-        background-color: red;
-        color: white;
-        padding: 20px;
-        border-radius: 12px;
-        margin-top: 20px;
+    .card {
+        border-radius: 18px;
     }
 </style>
 
@@ -42,17 +38,25 @@ else
         }
 
     </div>
-    <div class="test-card">
-        <div class="card-body">
+    <div class="card mt-4 shadow-lg border-0">
 
-            <h3 class="card-title">@lift.Title</h3>
+    <div class="card-body">
 
-            <p class="card-text">@lift.Content</p>
+        <h3 class="card-title text-primary">
+            @lift.Title
+        </h3>
 
-            <small class="text-muted">@lift.Category</small>
+        <p class="card-text fs-5">
+            @lift.Content
+        </p>
 
-        </div>
+        <small class="text-muted">
+            @lift.Category
+        </small>
+
     </div>
+
+</div>
 
     <button class="btn btn-primary mt-3"
             @onclick="GetNewLift">
