@@ -7,6 +7,16 @@
 
 <h1>Daily Lift ☀️</h1>
 
+<style>
+    .test-card {
+        background-color: red;
+        color: white;
+        padding: 20px;
+        border-radius: 12px;
+        margin-top: 20px;
+    }
+</style>
+
 @if (lift == null)
 {
     <p>Loading lifts...</p>
@@ -32,7 +42,7 @@ else
         }
 
     </div>
-    <div class="card mt-4 shadow">
+    <div class="test-card">
         <div class="card-body">
 
             <h3 class="card-title">@lift.Title</h3>
