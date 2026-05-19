@@ -16,6 +16,28 @@
     <div id="app">Loading...</div>
 
     <script src="_framework/blazor.webassembly.js"></script>
+
+<!-- ===== FIREBASE SDK FOR NOTIFICATIONS ===== -->
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-messaging-compat.js"></script>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyDaJrPJXYikMHJQvWp1mBd9qMtjzzpe-68",
+    authDomain: "dailyliftapp-aa3e1.firebaseapp.com",
+    projectId: "dailyliftapp-aa3e1",
+    storageBucket: "dailyliftapp-aa3e1.firebasestorage.app",
+    messagingSenderId: "992258604859",
+    appId: "1:992258604859:web:1b1acc7cd89cb9b093011e"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+
+  const messaging = firebase.messaging();
+  
+  // Your VAPID key
+  const vapidKey = "BN4-kB_Ue3nikF3x0_txxW6YaMcCTh1jXNq3Yn0micxDqoyjB8TjLR12lUZrW6csUUQ1b8lY7LIwuVLnp3u8dhY";
+</script>
 </body>
 
 </html>
