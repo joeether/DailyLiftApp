@@ -38,6 +38,28 @@
   // Your VAPID key
   const vapidKey = "BN4-kB_Ue3nikF3x0_txxW6YaMcCTh1jXNq3Yn0micxDqoyjB8TjLR12lUZrW6csUUQ1b8lY7LIwuVLnp3u8dhY";
 </script>
+
+<script>
+  async function requestNotificationPermission() {
+    try {
+      const permission = await Notification.requestPermission();
+      
+      if (permission === "granted") {
+        const token = await messaging.getToken({ vapidKey: vapidKey });
+        console.log("FCM Token:", token);
+        
+        // TODO: Later we'll send this token to your backend/Firestore
+        alert("Notifications enabled! ✅\nToken: " + token.substring(0, 20) + "...");
+        
+      } else {
+        alert("Notification permission denied.");
+      }
+    } catch (error) {
+      console.error("Error getting permission:", error);
+      alert("Error: " + error.message);
+    }
+  }
+</script>
 </body>
 
 </html>
