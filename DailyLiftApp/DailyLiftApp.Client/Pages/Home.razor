@@ -17,22 +17,31 @@ else
 
         @foreach (var category in categories)
         {
-            <div>
-                <input type="checkbox"
-                       checked="@selectedCategories.Contains(category)"
-                       @onchange="(e => ToggleCategory(category, e.Value))" />
+            <div class="form-check">
 
-                <label>@category</label>
+                <input class="form-check-input"
+                       type="checkbox"
+                       checked="@selectedCategories.Contains(category)"
+                       @onchange="@((ChangeEventArgs e) => ToggleCategory(category, e.Value))" />
+
+                <label class="form-check-label">
+                    @category
+                </label>
+
             </div>
         }
 
     </div>
-    <div class="card p-4 mt-4 shadow">
-        <h3>@lift.Title</h3>
+    <div class="card mt-4 shadow">
+        <div class="card-body">
 
-        <p>@lift.Content</p>
+            <h3 class="card-title">@lift.Title</h3>
 
-        <small>@lift.Category</small>
+            <p class="card-text">@lift.Content</p>
+
+            <small class="text-muted">@lift.Category</small>
+
+        </div>
     </div>
 
     <button class="btn btn-primary mt-3"
@@ -71,7 +80,7 @@ else
 
     private void ToggleCategory(string category, object? value)
     {
-        bool isChecked = (bool)value!;
+        bool isChecked = value?.ToString() == "true";
 
         if (isChecked)
         {
