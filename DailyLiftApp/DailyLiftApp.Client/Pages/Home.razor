@@ -13,6 +13,20 @@
 }
 else
 {
+    <div class="mb-3">
+
+        @foreach (var category in categories)
+        {
+            <div>
+                <input type="checkbox"
+                       checked="@selectedCategories.Contains(category)"
+                       @onchange="(e => ToggleCategory(category, e.Value))" />
+
+                <label>@category</label>
+            </div>
+        }
+
+    </div>
     <div class="card p-4 mt-4 shadow">
         <h3>@lift.Title</h3>
 
@@ -31,13 +45,42 @@ else
 
     private LiftItem? lift;
 
+    private List<string> categories = new();
+
+    private List<string> selectedCategories = new();
+
     protected override async Task OnInitializedAsync()
     {
-        lift = await LiftService.GetRandomLiftAsync();
+        var allLifts = await LiftService.GetLiftsAsync();
+
+        categories = allLifts
+            .Select(l => l.Category)
+            .Distinct()
+            .OrderBy(c => c)
+            .ToList();
+
+        selectedCategories = categories.ToList();
+
+        lift = await LiftService.GetRandomLiftAsync(selectedCategories);
     }
 
     private async Task GetNewLift()
     {
-        lift = await LiftService.GetRandomLiftAsync();
+        lift = await LiftService.GetRandomLiftAsync(selectedCategories);
+    }
+
+    private void ToggleCategory(string category, object? value)
+    {
+        bool isChecked = (bool)value!;
+
+        if (isChecked)
+        {
+            if (!selectedCategories.Contains(category))
+                selectedCategories.Add(category);
+        }
+        else
+        {
+            selectedCategories.Remove(category);
+        }
     }
 }

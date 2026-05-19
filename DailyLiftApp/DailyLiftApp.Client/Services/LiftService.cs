@@ -25,9 +25,16 @@ namespace DailyLiftApp.Client.Services
             return _lifts;
         }
 
-        public async Task<LiftItem?> GetRandomLiftAsync()
+        public async Task<LiftItem?> GetRandomLiftAsync(List<string>? selectedCategories = null)
         {
             var lifts = await GetLiftsAsync();
+
+            if (selectedCategories != null && selectedCategories.Any())
+            {
+                lifts = lifts
+                    .Where(l => selectedCategories.Contains(l.Category))
+                    .ToList();
+            }
 
             if (!lifts.Any())
                 return null;
