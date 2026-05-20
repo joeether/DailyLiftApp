@@ -94,6 +94,12 @@
             console.error("Service Worker not supported in this browser");
         }
     </script>
+
+    <script>
+  window.addEventListener('error', function(e) {
+    alert("Error: " + e.message + "\n\n" + e.filename + ":" + e.lineno);
+  });
+</script>
 </body>
 
 </html>
