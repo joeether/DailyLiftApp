@@ -130,11 +130,17 @@ else
     {
         try
         {
-            await JSRuntime.InvokeVoidAsync("requestNotificationPermission");
+            var permission = await JSRuntime.InvokeAsync<string>("requestNotificationPermission");
+
+            if (permission == "granted")
+            {
+                // The JS function already saved it, but we can also call C# if you want
+                Console.WriteLine("Notifications enabled!");
+            }
         }
         catch (Exception ex)
         {
-            Console.Error.WriteLine("Notification error: " + ex.Message);
+            Console.Error.WriteLine("Error: " + ex.Message);
         }
     }
 }
