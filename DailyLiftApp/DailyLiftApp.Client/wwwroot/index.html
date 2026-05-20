@@ -20,6 +20,7 @@
     <!-- ===== FIREBASE SDK FOR NOTIFICATIONS ===== -->
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-messaging-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
 
     <script>
         const firebaseConfig = {
@@ -34,8 +35,6 @@
         firebase.initializeApp(firebaseConfig);
 
         const messaging = firebase.messaging();
-
-        // Your VAPID key
         const vapidKey = "BN4-kB_Ue3nikF3x0_txxW6YaMcCTh1jXNq3Yn0micxDqoyjB8TjLR12lUZrW6csUUQ1b8lY7LIwuVLnp3u8dhY";
     </script>
 
@@ -48,7 +47,6 @@
                     const token = await messaging.getToken({ vapidKey: vapidKey });
                     console.log("✅ FCM Token:", token);
 
-                    // Save to Firestore using Firebase JS SDK
                     await saveTokenToFirestore(token);
 
                     alert("✅ Notifications Enabled & Token Saved!");
