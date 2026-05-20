@@ -17,69 +17,84 @@
 
     <script src="_framework/blazor.webassembly.js"></script>
 
-<!-- ===== FIREBASE SDK FOR NOTIFICATIONS ===== -->
-<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-messaging-compat.js"></script>
+    <!-- ===== FIREBASE SDK FOR NOTIFICATIONS ===== -->
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-messaging-compat.js"></script>
 
-<script>
-  const firebaseConfig = {
-    apiKey: "AIzaSyDaJrPJXYikMHJQvWp1mBd9qMtjzzpe-68",
-    authDomain: "dailyliftapp-aa3e1.firebaseapp.com",
-    projectId: "dailyliftapp-aa3e1",
-    storageBucket: "dailyliftapp-aa3e1.firebasestorage.app",
-    messagingSenderId: "992258604859",
-    appId: "1:992258604859:web:1b1acc7cd89cb9b093011e"
-  };
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDaJrPJXYikMHJQvWp1mBd9qMtjzzpe-68",
+            authDomain: "dailyliftapp-aa3e1.firebaseapp.com",
+            projectId: "dailyliftapp-aa3e1",
+            storageBucket: "dailyliftapp-aa3e1.firebasestorage.app",
+            messagingSenderId: "992258604859",
+            appId: "1:992258604859:web:1b1acc7cd89cb9b093011e"
+        };
 
-  firebase.initializeApp(firebaseConfig);
+        firebase.initializeApp(firebaseConfig);
 
-  const messaging = firebase.messaging();
-  
-  // Your VAPID key
-  const vapidKey = "BN4-kB_Ue3nikF3x0_txxW6YaMcCTh1jXNq3Yn0micxDqoyjB8TjLR12lUZrW6csUUQ1b8lY7LIwuVLnp3u8dhY";
-</script>
+        const messaging = firebase.messaging();
 
-<script>
-    async function requestNotificationPermission() {
-        try {
-            const permission = await Notification.requestPermission();
+        // Your VAPID key
+        const vapidKey = "BN4-kB_Ue3nikF3x0_txxW6YaMcCTh1jXNq3Yn0micxDqoyjB8TjLR12lUZrW6csUUQ1b8lY7LIwuVLnp3u8dhY";
+    </script>
 
-            if (permission === "granted") {
-                const token = await messaging.getToken({ vapidKey: vapidKey });
-                console.log("✅ FCM Token:", token);
+    <script>
+        async function requestNotificationPermission() {
+            try {
+                const permission = await Notification.requestPermission();
 
-                // Save to Firestore using Firebase JS SDK
-                await saveTokenToFirestore(token);
+                if (permission === "granted") {
+                    const token = await messaging.getToken({ vapidKey: vapidKey });
+                    console.log("✅ FCM Token:", token);
 
-                alert("✅ Notifications Enabled & Token Saved!");
-                return "granted";
-            } else {
-                alert("❌ Notifications permission denied.");
-                return "denied";
+                    // Save to Firestore using Firebase JS SDK
+                    await saveTokenToFirestore(token);
+
+                    alert("✅ Notifications Enabled & Token Saved!");
+                    return "granted";
+                } else {
+                    alert("❌ Notifications permission denied.");
+                    return "denied";
+                }
+            } catch (error) {
+                console.error("Error:", error);
+                alert("Error enabling notifications: " + error.message);
+                return "error";
             }
-        } catch (error) {
-            console.error("Error:", error);
-            alert("Error enabling notifications: " + error.message);
-            return "error";
         }
-    }
 
-    async function saveTokenToFirestore(token) {
-        try {
-            const db = firebase.firestore();
-            await db.collection("fcm_tokens").doc(token.substring(0, 40)).set({
-                token: token,
-                createdAt: firebase.firestore.FieldValue.serverTimestamp(),
-                platform: "web",
-                lastUpdated: firebase.firestore.FieldValue.serverTimestamp()
-            }, { merge: true });
+        async function saveTokenToFirestore(token) {
+            try {
+                const db = firebase.firestore();
+                await db.collection("fcm_tokens").doc(token.substring(0, 40)).set({
+                    token: token,
+                    createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+                    platform: "web",
+                    lastUpdated: firebase.firestore.FieldValue.serverTimestamp()
+                }, { merge: true });
 
-            console.log("✅ Token successfully saved to Firestore");
-        } catch (e) {
-            console.error("Failed to save token to Firestore:", e);
+                console.log("✅ Token successfully saved to Firestore");
+            } catch (e) {
+                console.error("Failed to save token to Firestore:", e);
+            }
         }
-    }
-</script>
+    </script>
+
+    <script>
+        // Register the Firebase Messaging Service Worker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/firebase-messaging-sw.js')
+                .then((registration) => {
+                    console.log('✅ Firebase Messaging Service Worker registered successfully');
+                    // Optional: Tell Firebase to use this specific worker
+                    messaging.useServiceWorker(registration);
+                })
+                .catch((error) => {
+                    console.error('❌ Service Worker registration failed:', error);
+                });
+        }
+    </script>
 </body>
 
 </html>
