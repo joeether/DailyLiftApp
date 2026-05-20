@@ -12,13 +12,3 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 const messaging = firebase.messaging();
-
-messaging.onBackgroundMessage((payload) => {
-    console.log('Received background message:', payload);
-    const notificationTitle = payload.notification?.title || "Daily Lift";
-    const notificationOptions = {
-        body: payload.notification?.body || "Time for today's wisdom 💪",
-        icon: "/icon-192.png"
-    };
-    self.registration.showNotification(notificationTitle, notificationOptions);
-});
