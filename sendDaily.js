@@ -16,7 +16,6 @@ async function sendDailyNotifications() {
     }
 
     const tokens = snapshot.docs.map(doc => doc.data().token);
-
     console.log(`Found ${tokens.length} tokens`);
 
     const payload = {
@@ -26,14 +25,25 @@ async function sendDailyNotifications() {
       }
     };
 
-    const response = await admin.messaging().sendMulticast({
-      tokens: tokens,
-      notification: payload.notification
-    });
+    let success = 0;
+    let failure = 0;
 
-    console.log(`✅ Successfully sent ${response.successCount} notifications`);
-    if (response.failureCount > 0) {
-      console.log(`❌ Failed to send ${response.failureCount} notifications`);
+    for (const token of tokens) {
+      try {
+        await admin.messaging().send({
+          token: token,
+          notification: payload.notification
+        });
+        success++;
+      } catch (err) {
+        console.error("Failed to send to one token:", err);
+        failure++;
+      }
+    }
+
+    console.log(`✅ Successfully sent ${success} notifications`);
+    if (failure > 0) {
+      console.log(`❌ Failed to send ${failure} notifications`);
     }
 
   } catch (error) {
