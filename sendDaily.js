@@ -17,6 +17,8 @@ async function sendDailyNotifications() {
 
     const tokens = snapshot.docs.map(doc => doc.data().token);
 
+    console.log(`Found ${tokens.length} tokens`);
+
     const payload = {
       notification: {
         title: "🌅 Your Daily Lift",
@@ -31,8 +33,9 @@ async function sendDailyNotifications() {
 
     console.log(`✅ Successfully sent ${response.successCount} notifications`);
     if (response.failureCount > 0) {
-      console.log(`Failed to send ${response.failureCount} notifications`);
+      console.log(`❌ Failed to send ${response.failureCount} notifications`);
     }
+
   } catch (error) {
     console.error("Error sending notifications:", error);
   }
