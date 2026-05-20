@@ -75,6 +75,10 @@ else
             @onclick="GetNewLift">
         New Lifts
     </button>
+
+    <button class="btn btn-success mt-3 ms-2" @onclick="RequestNotificationPermission">
+    🛎 Enable Daily Notifications
+</button>
 }
 
 @code {
@@ -117,6 +121,18 @@ else
         else
         {
             selectedCategories.Remove(category);
+        }
+    }
+
+    private async Task RequestNotificationPermission()
+    {
+        try
+        {
+            await JSRuntime.InvokeVoidAsync("requestNotificationPermission");
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine("Notification error: " + ex.Message);
         }
     }
 }
