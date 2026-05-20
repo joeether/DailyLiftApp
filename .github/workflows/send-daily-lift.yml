@@ -2,8 +2,8 @@ name: Send Daily Lift Notifications
 
 on:
   schedule:
-    - cron: '0 13 * * *'        # 8:00 AM Eastern Time (Georgia)
-  workflow_dispatch:            # Allows manual trigger
+    - cron: '0 13 * * *'   # 8:00 AM Eastern
+  workflow_dispatch:
 
 jobs:
   send-notifications:
@@ -18,47 +18,12 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install Firebase Tools
-        run: npm install -g firebase-tools
+      - name: Install Dependencies
+        run: npm install firebase-admin
 
       - name: Send Daily Notifications
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-        run: |
-          echo "$FIREBASE_SERVICE_ACCOUNT" > service-account.json
-          node - << 'EOF'
-          const admin = require('firebase-admin');
-          
-          const serviceAccount = require('./service-account.json');
-          admin.initializeApp({
-            credential: admin.credential.cert(serviceAccount)
-          });
+        run: node sendDaily.js
 
-          async function sendDailyNotifications() {
-            const tokensSnapshot = await admin.firestore().collection('fcm_tokens').get();
-            
-            if (tokensSnapshot.empty) {
-              console.log("No tokens found");
-              return;
-            }
-
-            const payload = {
-              notification: {
-                title: "🌅 Your Daily Lift",
-                body: "Time for today's wisdom, joke, or fact 💪",
-                icon: "/icon-192.png"
-              }
-            };
-
-            const tokens = tokensSnapshot.docs.map(doc => doc.data().token);
-
-            const response = await admin.messaging().sendMulticast({
-              tokens: tokens,
-              notification: payload.notification
-            });
-
-            console.log(`✅ Sent ${response.successCount} notifications`);
-          }
-
-          sendDailyNotifications();
-          EOF
+# Create this new file below
