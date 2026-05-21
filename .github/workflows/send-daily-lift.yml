@@ -2,8 +2,8 @@ name: Send Daily Lift Notifications
 
 on:
   schedule:
-    - cron: '0 13 * * *'   # 8:00 AM Eastern
-  workflow_dispatch:
+    - cron: '0 14 * * *'      # 8:00 AM Eastern (7:00 AM Central)
+  workflow_dispatch:          # Allows manual testing
 
 jobs:
   send-notifications:
@@ -12,6 +12,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Show current server time
+        run: date -u
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -25,5 +28,3 @@ jobs:
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: node sendDaily.js
-
-# Create this new file below
