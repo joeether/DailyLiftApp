@@ -2,7 +2,7 @@ name: Send Daily Lift Notifications
 
 on:
   schedule:
-    - cron: '0/30 * * * *'     # Every hour on the hour (for testing)
+    - cron: '*/30 * * * *'     # Every 30 minutes  
   workflow_dispatch:          # Allows manual testing
 
 jobs:
