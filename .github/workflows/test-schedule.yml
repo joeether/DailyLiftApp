@@ -1,0 +1,17 @@
+name: Test Schedule
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'   # Every 10 minutes (for testing)
+  workflow_dispatch:         # Allows manual trigger
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show current time
+        run: echo "Current time is $(date -u)"
+
+      - name: Hello from scheduled job
+        run: echo "✅ Scheduled job is working! Hello from GitHub Actions at $(date -u)"
