@@ -22,6 +22,10 @@ async function sendDailyNotifications() {
       notification: {
         title: "🌅 Your Daily Lift",
         body: "Time for today's wisdom, joke, or fact 💪 Tap to open!",
+        icon: "/icon-192.png",        // Make sure this file exists in your public folder
+      },
+      data: {
+        url: "/"                      // Change this to "/daily" or whatever page you want to open
       }
     };
 
@@ -32,7 +36,8 @@ async function sendDailyNotifications() {
       try {
         await admin.messaging().send({
           token: token,
-          notification: payload.notification
+          notification: payload.notification,
+          data: payload.data               // <-- This sends the deep link
         });
         success++;
       } catch (err) {
