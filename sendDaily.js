@@ -18,14 +18,25 @@ async function sendDailyNotifications() {
     const tokens = snapshot.docs.map(doc => doc.data().token);
     console.log(`Found ${tokens.length} tokens`);
 
-    const payload = {
+    const message = {
       notification: {
         title: "🌅 Your Daily Lift",
         body: "Time for today's wisdom, joke, or fact 💪 Tap to open!",
-        icon: "/icon-192.png",        // Make sure this file exists in your public folder
       },
       data: {
-        url: "/"                      // Change this to "/daily" or whatever page you want to open
+        url: "/"                     // Change to "/daily" or whatever page you want
+      },
+      android: {
+        notification: {
+          icon: "ic_launcher"       // Use your app's icon name here
+        }
+      },
+      apns: {
+        payload: {
+          aps: {
+            'mutable-content': 1
+          }
+        }
       }
     };
 
@@ -36,8 +47,7 @@ async function sendDailyNotifications() {
       try {
         await admin.messaging().send({
           token: token,
-          notification: payload.notification,
-          data: payload.data               // <-- This sends the deep link
+          ...message
         });
         success++;
       } catch (err) {
