@@ -51,21 +51,4 @@ async function sendDailyNotifications() {
   }
 }
 
-const payload = {
-  notification: {
-    title: "🌅 Your Daily Lift",
-    body: "Time for today's wisdom, joke, or fact 💪 Tap to open!",
-    icon: "/icon-192.png",        // Make sure this exists
-  },
-  data: {
-    url: "/"                       // Change this to "/daily" or whatever page you want
-  }
-};
-
-await admin.messaging().send({
-  token: token,
-  notification: payload.notification,
-  data: payload.data                  // <-- Important
-});
-
 sendDailyNotifications();
