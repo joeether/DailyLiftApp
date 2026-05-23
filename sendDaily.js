@@ -9,25 +9,57 @@ if (!admin.apps.length) {
   });
 }
 
-async function sendDailyNotification(token) {
-  const message = {
-    token: token,
-    notification: {
-      title: "🌅 Your Daily Lift",
-      body: "Time for today's wisdom, joke, or fact 💪 Tap to open!",
-    },
-    data: {
-      url: "https://your-app-url.web.app/"   // ← Change this to your real Firebase Hosting URL
-    }
-  };
-
+async function sendDailyNotifications() {
   try {
-    await admin.messaging().send(message);
-    console.log("✅ Daily notification sent successfully!");
+    const db = admin.firestore();
+    const usersSnapshot = await db.collection('users').get();  // Change 'users' if your collection name is different
+
+    if (usersSnapshot.empty) {
+      console.log("No users found in Firestore.");
+      return;
+    }
+
+    const messageBase = {
+      notification: {
+        title: "🌅 Your Daily Lift",
+        body: "Time for today's wisdom, joke, or fact 💪 Tap to open!",
+      },
+      data: {
+        url: "https://dailyliftapp.com/"   // ← UPDATE with your real Firebase Hosting URL
+      }
+    };
+
+    let successCount = 0;
+    let failureCount = 0;
+
+    for (const doc of usersSnapshot.docs) {
+      const userData = doc.data();
+      const token = userData.fcmToken;   // Make sure this field name matches what you saved
+
+      if (!token) {
+        console.log(`Skipping user ${doc.id} - no FCM token`);
+        continue;
+      }
+
+      try {
+        await admin.messaging().send({
+          token: token,
+          notification: messageBase.notification,
+          data: messageBase.data
+        });
+        successCount++;
+        console.log(`✅ Sent to user ${doc.id}`);
+      } catch (error) {
+        failureCount++;
+        console.error(`❌ Failed to send to ${doc.id}:`, error.message);
+      }
+    }
+
+    console.log(`\n🎉 Daily notifications complete! Success: ${successCount} | Failures: ${failureCount}`);
   } catch (error) {
-    console.error("❌ Error sending message:", error);
+    console.error("❌ Big error in sendDailyNotifications:", error);
   }
 }
 
-// Call it with the token (you'll need to get the token from wherever you store it)
-await sendDailyNotification("USER_FCM_TOKEN_HERE");
+// Run it
+await sendDailyNotifications();
