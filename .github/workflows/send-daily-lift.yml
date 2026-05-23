@@ -1,9 +1,10 @@
 name: Send Daily Lift Notifications
 
 on:
-  repository_dispatch:            # Triggered by cron-job.org
-    types: [daily-lift]           # Optional: helps identify the trigger
+  schedule:
+    - cron: '0 13 * * *'     # 8:00 AM Eastern Time
   workflow_dispatch:              # Manual trigger from GitHub
+  repository_dispatch:            # Trigger from external scheduler (cron-job.org)
 
 jobs:
   send-notifications:
