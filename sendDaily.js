@@ -12,7 +12,15 @@ if (!admin.apps.length) {
 async function sendDailyNotifications() {
   try {
     const db = admin.firestore();
-    const usersSnapshot = await db.collection('users').get();  // Change 'users' if your collection name is different
+    
+    console.log("🔍 Testing Firestore access...");
+
+    // List all collections to see what the service account can actually see
+    const collections = await db.listCollections();
+    console.log("📋 Available collections:", collections.map(c => c.id));
+
+    const usersSnapshot = await db.collection('users').get();
+    console.log(`Found ${usersSnapshot.size} documents in 'users' collection`);
 
     if (usersSnapshot.empty) {
       console.log("No users found in Firestore.");
@@ -25,7 +33,7 @@ async function sendDailyNotifications() {
         body: "Time for today's wisdom, joke, or fact 💪 Tap to open!",
       },
       data: {
-        url: "https://dailyliftapp.com/"   // ← UPDATE with your real Firebase Hosting URL
+        url: "https://dailyliftapp.com/"   
       }
     };
 
@@ -34,7 +42,9 @@ async function sendDailyNotifications() {
 
     for (const doc of usersSnapshot.docs) {
       const userData = doc.data();
-      const token = userData.fcmToken;   // Make sure this field name matches what you saved
+      const token = userData.fcmToken;
+
+      console.log(`User \( {doc.id} - fcmToken: " \){token || 'MISSING'}"`);
 
       if (!token) {
         console.log(`Skipping user ${doc.id} - no FCM token`);
