@@ -30,8 +30,7 @@ async function sendDailyNotifications() {
     const messageBase = {
   notification: {
     title: "🌅 Your Daily Lift",
-    body: "Time for today's wisdom, joke, or fact 💪 Tap to open!",
-    icon: "https://dailyliftapp.com/icon-192.png"   // ← Add this
+    body: "Time for today's wisdom, joke, or fact 💪 Tap to open!"
   },
   data: {
     url: "https://dailyliftapp.com/",
@@ -41,6 +40,9 @@ async function sendDailyNotifications() {
   webpush: {
     fcmOptions: {
       link: "https://dailyliftapp.com/"
+    },
+    notification: {
+      icon: "https://dailyliftapp.com/icon-192.png"   // ← Put icon here for web
     }
   }
 };
