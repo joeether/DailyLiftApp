@@ -31,15 +31,16 @@ async function sendDailyNotifications() {
   notification: {
     title: "🌅 Your Daily Lift",
     body: "Time for today's wisdom, joke, or fact 💪 Tap to open!",
+    icon: "https://dailyliftapp.com/icon-192.png"   // ← Add this
   },
   data: {
-    url: "https://dailyliftapp.com/",     // make sure this matches your actual hosted URL
-    click_action: "FLUTTER_NOTIFICATION_CLICK",  // sometimes helps
+    url: "https://dailyliftapp.com/",
+    click_action: "FLUTTER_NOTIFICATION_CLICK",
     type: "daily_lift"
   },
   webpush: {
     fcmOptions: {
-      link: "https://dailyliftapp.com/"   // This is important for web
+      link: "https://dailyliftapp.com/"
     }
   }
 };
