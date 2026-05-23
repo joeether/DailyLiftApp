@@ -1,32 +1,26 @@
-self.addEventListener('install', event => {
-    self.skipWaiting();
-});
-
-self.addEventListener('activate', event => {
-    event.waitUntil(self.clients.claim());
-});
-
-// Handle notification click - THIS IS THE IMPORTANT PART
 self.addEventListener('notificationclick', event => {
-    event.notification.close();
+  event.notification.close();
 
-    const url = event.notification.data && event.notification.data.url 
-                ? event.notification.data.url 
-                : '/';
+  let url = event.notification.data && event.notification.data.url 
+            ? event.notification.data.url 
+            : '/';
 
-    event.waitUntil(
-        clients.matchAll({ type: 'window', includeUncontrolled: true })
-            .then(clientList => {
-                // If PWA is already open, focus it and navigate
-                for (let client of clientList) {
-                    if (client.url.includes(url) && 'focus' in client) {
-                        return client.focus();
-                    }
-                }
-                // Otherwise open the PWA
-                if (clients.openWindow) {
-                    return clients.openWindow(url);
-                }
-            })
-    );
+  // Make sure it's a full URL
+  if (!url.startsWith('http')) {
+    url = https://dailyliftapp.com/' + (url.startsWith('/') ? url : '/' + url);
+  }
+
+  event.waitUntil(
+    clients.matchAll({ type: 'window', includeUncontrolled: true })
+      .then(clientList => {
+        for (let client of clientList) {
+          if (client.url.includes(url) && 'focus' in client) {
+            return client.focus();
+          }
+        }
+        if (clients.openWindow) {
+          return clients.openWindow(url);
+        }
+      })
+  );
 });
