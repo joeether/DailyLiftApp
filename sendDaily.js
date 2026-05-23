@@ -15,15 +15,15 @@ async function sendDailyNotifications() {
     
     console.log("🔍 Testing Firestore access...");
 
-    // List all collections to see what the service account can actually see
     const collections = await db.listCollections();
     console.log("📋 Available collections:", collections.map(c => c.id));
 
-    const usersSnapshot = await db.collection('users').get();
-    console.log(`Found ${usersSnapshot.size} documents in 'users' collection`);
+    // Changed from 'users' to 'fcm_tokens'
+    const usersSnapshot = await db.collection('fcm_tokens').get();
+    console.log(`Found ${usersSnapshot.size} documents in 'fcm_tokens' collection`);
 
     if (usersSnapshot.empty) {
-      console.log("No users found in Firestore.");
+      console.log("No users found in fcm_tokens collection.");
       return;
     }
 
@@ -42,7 +42,7 @@ async function sendDailyNotifications() {
 
     for (const doc of usersSnapshot.docs) {
       const userData = doc.data();
-      const token = userData.fcmToken;
+      const token = userData.fcmToken || userData.token;   // try both possible field names
 
       console.log(`User \( {doc.id} - fcmToken: " \){token || 'MISSING'}"`);
 
