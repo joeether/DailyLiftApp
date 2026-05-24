@@ -54,7 +54,7 @@ async function sendDailyNotifications() {
       const userData = doc.data();
       const token = userData.fcmToken || userData.token;   // try both possible field names
 
-      console.log(`User \( {doc.id} - fcmToken: " \){token || 'MISSING'}"`);
+      console.log(`User ${doc.id} - fcmToken: ${token || 'MISSING'}`);
 
       if (!token) {
         console.log(`Skipping user ${doc.id} - no FCM token`);
