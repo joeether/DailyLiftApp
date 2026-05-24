@@ -40,9 +40,6 @@ async function sendDailyNotifications() {
   webpush: {
     fcmOptions: {
       link: "https://dailyliftapp.com/"
-    },
-    notification: {
-      icon: "https://dailyliftapp.com/icon-192.png"   // ← Put icon here for web
     }
   }
 };
