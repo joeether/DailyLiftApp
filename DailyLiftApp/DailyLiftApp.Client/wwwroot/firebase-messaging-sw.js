@@ -14,6 +14,7 @@ firebase.initializeApp(firebaseConfig);
 const messaging = firebase.messaging();
 
 // Handle background messages
+/*
 messaging.onBackgroundMessage((payload) => {
   console.log('Received background message:', payload);
 
@@ -28,7 +29,7 @@ messaging.onBackgroundMessage((payload) => {
   };
 
   self.registration.showNotification(notificationTitle, notificationOptions);
-});
+});*/
 
 // 🔥 THIS IS WHAT YOU WERE MISSING - Click Handler
 self.addEventListener('notificationclick', function(event) {
