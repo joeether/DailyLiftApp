@@ -63,10 +63,10 @@ async function sendDailyNotifications() {
 
       try {
         await admin.messaging().send({
-          token: token,
-          notification: messageBase.notification,
-          data: messageBase.data
-        });
+  token: token,
+  data: messageBase.data,
+  webpush: messageBase.webpush
+});
         successCount++;
         console.log(`✅ Sent to user ${doc.id}`);
       } catch (error) {
