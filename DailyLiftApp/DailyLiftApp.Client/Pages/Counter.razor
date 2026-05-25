@@ -10,13 +10,19 @@
         <h3>Appearance</h3>
         <div class="theme-options">
             <label>
-                <input type="radio" name="theme" value="light" checked="@(CurrentTheme == "light")" @onchange="() => SetTheme("light")" /> Light
+                <input type="radio" name="theme" value="light" 
+                       checked="@(CurrentTheme == "light")" 
+                       @onchange="() => SetTheme("light")" /> Light
             </label>
             <label>
-                <input type="radio" name="theme" value="dark" checked="@(CurrentTheme == "dark")" @onchange="() => SetTheme("dark")" /> Dark
+                <input type="radio" name="theme" value="dark" 
+                       checked="@(CurrentTheme == "dark")" 
+                       @onchange="() => SetTheme("dark")" /> Dark
             </label>
             <label>
-                <input type="radio" name="theme" value="system" checked="@(CurrentTheme == "system")" @onchange="() => SetTheme("system")" /> System
+                <input type="radio" name="theme" value="system" 
+                       checked="@(CurrentTheme == "system")" 
+                       @onchange="() => SetTheme("system")" /> System
             </label>
         </div>
     </div>
@@ -60,26 +66,29 @@
 
     protected override void OnInitialized()
     {
-        Categories.Add(new CategoryPreference { Name = "Motivational", Enabled = true, Weight = 8 });
-        Categories.Add(new CategoryPreference { Name = "Dad Jokes", Enabled = true, Weight = 5 });
-        Categories.Add(new CategoryPreference { Name = "Life Advice", Enabled = true, Weight = 7 });
-        // Add more as needed
+        Categories = new List<CategoryPreference>
+        {
+            new CategoryPreference { Name = "Motivational", Enabled = true, Weight = 8 },
+            new CategoryPreference { Name = "Dad Jokes", Enabled = true, Weight = 5 },
+            new CategoryPreference { Name = "Life Advice", Enabled = true, Weight = 7 },
+            new CategoryPreference { Name = "Fitness", Enabled = true, Weight = 6 }
+        };
     }
 
     private void SetTheme(string theme)
     {
         CurrentTheme = theme;
-        // TODO: Apply theme logic here
         Console.WriteLine($"Theme changed to: {theme}");
+        // Add your actual theme switching logic here later
     }
 
     private async Task SubmitContent()
     {
         if (!string.IsNullOrWhiteSpace(NewContent))
         {
-            // TODO: Send email or API call
-            Console.WriteLine($"Submitted: {NewContent} by {SubmitterName}");
-            
+            Console.WriteLine($"New submission - Category: {NewCategory}, Content: {NewContent}, By: {SubmitterName}");
+            // TODO: Send email here
+
             NewContent = "";
             NewCategory = "";
             SubmitterName = "";
