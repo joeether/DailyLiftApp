@@ -12,10 +12,26 @@
 <div class="settings-container">
     <h1>Settings</h1>
 
-    <!-- Theme -->
+    <!-- Theme Selection -->
     <div class="section">
         <h3>Appearance</h3>
-        <p><em>Theme options coming soon...</em></p>
+        <div class="theme-options">
+            <label>
+                <input type="radio" name="theme" value="light" 
+                       checked="@(CurrentTheme == "light")" 
+                       @onchange="() => SetTheme("light")" /> Light
+            </label>
+            <label>
+                <input type="radio" name="theme" value="dark" 
+                       checked="@(CurrentTheme == "dark")" 
+                       @onchange="() => SetTheme("dark")" /> Dark
+            </label>
+            <label>
+                <input type="radio" name="theme" value="system" 
+                       checked="@(CurrentTheme == "system")" 
+                       @onchange="() => SetTheme("system")" /> System
+            </label>
+        </div>
     </div>
 
     <!-- Content Preferences -->
@@ -50,6 +66,14 @@
 </div>
 
 @code {
+    private string CurrentTheme = "system";
+
+    private void SetTheme(string theme)
+    {
+        CurrentTheme = theme;
+        // TODO: Apply the actual theme (CSS classes, local storage, etc.)
+        Console.WriteLine($"Theme changed to: {theme}");
+    }
     private List<string> AllCategories = new();
     private List<string> selectedCategories = new();
 
