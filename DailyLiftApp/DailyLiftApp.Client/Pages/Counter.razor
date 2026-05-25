@@ -1,5 +1,12 @@
 @page "/settings"
 
+@using DailyLiftApp.Client.Models
+@using DailyLiftApp.Client.Services
+
+@inject LiftService LiftService
+
+@inject IJSRuntime JSRuntime
+
 <PageTitle>Settings - Daily Lift</PageTitle>
 
 <div class="settings-container">
