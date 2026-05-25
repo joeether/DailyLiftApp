@@ -5,26 +5,10 @@
 <div class="settings-container">
     <h1>Settings</h1>
 
-    <!-- Theme Selection -->
+    <!-- Theme Selection - Simplified for now -->
     <div class="section">
         <h3>Appearance</h3>
-        <div class="theme-options">
-            <label>
-                <input type="radio" name="theme" value="light" 
-                       checked="@(CurrentTheme == "light")" 
-                       @onchange="() => SetTheme("light")" /> Light
-            </label>
-            <label>
-                <input type="radio" name="theme" value="dark" 
-                       checked="@(CurrentTheme == "dark")" 
-                       @onchange="() => SetTheme("dark")" /> Dark
-            </label>
-            <label>
-                <input type="radio" name="theme" value="system" 
-                       checked="@(CurrentTheme == "system")" 
-                       @onchange="() => SetTheme("system")" /> System
-            </label>
-        </div>
+        <p><em>Theme options coming soon...</em></p>
     </div>
 
     <!-- Content Preferences -->
@@ -56,8 +40,6 @@
 </div>
 
 @code {
-    private string CurrentTheme = "system";
-
     private List<CategoryPreference> Categories = new();
 
     private string NewCategory = "";
@@ -75,18 +57,11 @@
         };
     }
 
-    private void SetTheme(string theme)
-    {
-        CurrentTheme = theme;
-        Console.WriteLine($"Theme changed to: {theme}");
-        // Add your actual theme switching logic here later
-    }
-
     private async Task SubmitContent()
     {
         if (!string.IsNullOrWhiteSpace(NewContent))
         {
-            Console.WriteLine($"New submission - Category: {NewCategory}, Content: {NewContent}, By: {SubmitterName}");
+            Console.WriteLine($"New submission: {NewContent} by {SubmitterName}");
             // TODO: Send email here
 
             NewContent = "";
