@@ -4,7 +4,6 @@
 @using DailyLiftApp.Client.Services
 
 @inject LiftService LiftService
-
 @inject IJSRuntime JSRuntime
 
 <PageTitle>Settings - Daily Lift</PageTitle>
@@ -46,10 +45,10 @@
                            @onchange="@((ChangeEventArgs e) => ToggleCategory(category, e.Value))" />
                     @category
                 </label>
-                
+
                 <div class="weight-slider">
-                    <input type="range" min="1" max="10" value="5" disabled />
-                    <span>5</span>
+                    <input type="range" min="1" max="10" @bind="GetWeight(category)" @onchange="@((ChangeEventArgs e) => SetWeight(category, e.Value))" />
+                    <span>@GetWeight(category)</span>
                 </div>
             </div>
         }
@@ -68,14 +67,9 @@
 @code {
     private string CurrentTheme = "system";
 
-    private void SetTheme(string theme)
-    {
-        CurrentTheme = theme;
-        // TODO: Apply the actual theme (CSS classes, local storage, etc.)
-        Console.WriteLine($"Theme changed to: {theme}");
-    }
     private List<string> AllCategories = new();
     private List<string> selectedCategories = new();
+    private Dictionary<string, int> categoryWeights = new();
 
     private string NewCategory = "";
     private string NewContent = "";
@@ -91,7 +85,26 @@
             .OrderBy(c => c)
             .ToList();
 
-        selectedCategories = AllCategories.ToList(); // start with all selected
+        selectedCategories = AllCategories.ToList();
+
+        // Default weights
+        foreach (var cat in AllCategories)
+        {
+            categoryWeights[cat] = 5;
+        }
+    }
+
+    private int GetWeight(string category)
+    {
+        return categoryWeights.TryGetValue(category, out var weight) ? weight : 5;
+    }
+
+    private void SetWeight(string category, object? value)
+    {
+        if (int.TryParse(value?.ToString(), out var weight))
+        {
+            categoryWeights[category] = weight;
+        }
     }
 
     private void ToggleCategory(string category, object? value)
@@ -107,6 +120,12 @@
         {
             selectedCategories.Remove(category);
         }
+    }
+
+    private void SetTheme(string theme)
+    {
+        CurrentTheme = theme;
+        Console.WriteLine($"Theme changed to: {theme}");
     }
 
     private async Task SubmitContent()
