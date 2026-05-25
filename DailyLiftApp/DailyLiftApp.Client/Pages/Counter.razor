@@ -14,42 +14,66 @@
     <!-- Theme Selection -->
     <div class="section">
         <h3>Appearance</h3>
+
         <div class="theme-options">
+
             <label>
-                <input type="radio" name="theme" value="light" 
-                       checked="@(CurrentTheme == "light")" 
-                       @onchange="() => SetTheme("light")" /> Light
+                <input type="radio"
+                       name="theme"
+                       value="light"
+                       checked="@(CurrentTheme == "light")"
+                       @onchange='@(() => SetTheme("light"))' />
+                Light
             </label>
+
             <label>
-                <input type="radio" name="theme" value="dark" 
-                       checked="@(CurrentTheme == "dark")" 
-                       @onchange="() => SetTheme("dark")" /> Dark
+                <input type="radio"
+                       name="theme"
+                       value="dark"
+                       checked="@(CurrentTheme == "dark")"
+                       @onchange='@(() => SetTheme("dark"))' />
+                Dark
             </label>
+
             <label>
-                <input type="radio" name="theme" value="system" 
-                       checked="@(CurrentTheme == "system")" 
-                       @onchange="() => SetTheme("system")" /> System
+                <input type="radio"
+                       name="theme"
+                       value="system"
+                       checked="@(CurrentTheme == "system")"
+                       @onchange='@(() => SetTheme("system"))' />
+                System
             </label>
+
         </div>
     </div>
 
     <!-- Content Preferences -->
     <div class="section">
         <h3>Content Preferences</h3>
+
         @foreach (var category in AllCategories)
         {
             <div class="category-row">
+
                 <label>
-                    <input type="checkbox" 
-                           checked="@selectedCategories.Contains(category)" 
-                           @onchange="@((ChangeEventArgs e) => ToggleCategory(category, e.Value))" />
+                    <input type="checkbox"
+                           checked="@selectedCategories.Contains(category)"
+                           @onchange="@(e => ToggleCategory(category, e.Value))" />
                     @category
                 </label>
 
                 <div class="weight-slider">
-                    <input type="range" min="1" max="10" @bind="GetWeight(category)" @onchange="@((ChangeEventArgs e) => SetWeight(category, e.Value))" />
+
+                    <input type="range"
+                           min="1"
+                           max="10"
+                           value="@GetWeight(category)"
+                           @onchange="@(e => SetWeight(category, e.Value))" />
+
                     <span>@GetWeight(category)</span>
+
                 </div>
+
             </div>
         }
     </div>
@@ -57,14 +81,25 @@
     <!-- Submission -->
     <div class="section">
         <h3>Submit New Content</h3>
-        <input placeholder="Category Name (optional)" @bind="NewCategory" />
-        <textarea placeholder="Write your quote, joke, or message here..." @bind="NewContent" rows="4"></textarea>
-        <input placeholder="Submit as (username)" @bind="SubmitterName" />
-        <button @onclick="SubmitContent">Submit Suggestion</button>
+
+        <input placeholder="Category Name (optional)"
+               @bind="NewCategory" />
+
+        <textarea placeholder="Write your quote, joke, or message here..."
+                  @bind="NewContent"
+                  rows="4"></textarea>
+
+        <input placeholder="Submit as (username)"
+               @bind="SubmitterName" />
+
+        <button @onclick="SubmitContent">
+            Submit Suggestion
+        </button>
     </div>
 </div>
 
 @code {
+
     private string CurrentTheme = "system";
 
     private List<string> AllCategories = new();
@@ -78,7 +113,7 @@
     protected override async Task OnInitializedAsync()
     {
         var allLifts = await LiftService.GetLiftsAsync();
-        
+
         AllCategories = allLifts
             .Select(l => l.Category)
             .Distinct()
@@ -87,7 +122,6 @@
 
         selectedCategories = AllCategories.ToList();
 
-        // Default weights
         foreach (var cat in AllCategories)
         {
             categoryWeights[cat] = 5;
@@ -96,7 +130,9 @@
 
     private int GetWeight(string category)
     {
-        return categoryWeights.TryGetValue(category, out var weight) ? weight : 5;
+        return categoryWeights.TryGetValue(category, out var weight)
+            ? weight
+            : 5;
     }
 
     private void SetWeight(string category, object? value)
@@ -114,7 +150,9 @@
         if (isChecked)
         {
             if (!selectedCategories.Contains(category))
+            {
                 selectedCategories.Add(category);
+            }
         }
         else
         {
@@ -125,6 +163,7 @@
     private void SetTheme(string theme)
     {
         CurrentTheme = theme;
+
         Console.WriteLine($"Theme changed to: {theme}");
     }
 
@@ -133,7 +172,8 @@
         if (!string.IsNullOrWhiteSpace(NewContent))
         {
             Console.WriteLine($"Submitted: {NewContent} by {SubmitterName}");
-            // TODO: Send email
+
+            // TODO: Send email or save to database
 
             NewContent = "";
             NewCategory = "";
