@@ -1,10 +1,91 @@
-﻿@page "/settings"
+@page "/settings"
 
-<PageTitle>Settings</PageTitle>
+<PageTitle>Settings - Daily Lift</PageTitle>
 
-<h1>Settings</h1>
+<div class="settings-container">
+    <h1>Settings</h1>
 
+    <!-- Theme Mode -->
+    <div class="section">
+        <h3>Appearance</h3>
+        <div class="theme-options">
+            <label>
+                <input type="radio" name="theme" value="light" @onchange="e => SetTheme("light")" checked="@(CurrentTheme == "light")" /> Light
+            </label>
+            <label>
+                <input type="radio" name="theme" value="dark" @onchange="e => SetTheme("dark")" checked="@(CurrentTheme == "dark")" /> Dark
+            </label>
+            <label>
+                <input type="radio" name="theme" value="system" @onchange="e => SetTheme("system")" checked="@(CurrentTheme == "system")" /> System
+            </label>
+        </div>
+    </div>
+
+    <!-- Content Preferences -->
+    <div class="section">
+        <h3>Content Preferences</h3>
+        @foreach (var category in Categories)
+        {
+            <div class="category-row">
+                <label>
+                    <input type="checkbox" @bind="category.Enabled" />
+                    @category.Name
+                </label>
+                <div class="weight-slider">
+                    <input type="range" min="1" max="10" @bind="category.Weight" />
+                    <span>@category.Weight</span>
+                </div>
+            </div>
+        }
+    </div>
+
+    <!-- Submission Form -->
+    <div class="section">
+        <h3>Submit New Content</h3>
+        <input placeholder="Category Name (optional)" @bind="NewCategory" />
+        <textarea placeholder="Write your quote, joke, or message here..." @bind="NewContent" rows="4"></textarea>
+        <input placeholder="Submit as (username)" @bind="SubmitterName" />
+        <button @onclick="SubmitContent">Submit Suggestion</button>
+    </div>
+</div>
 
 @code {
-    
+    private string CurrentTheme = "system";
+    private List<CategoryPreference> Categories = new();
+    private string NewCategory = "";
+    private string NewContent = "";
+    private string SubmitterName = "";
+
+    protected override void OnInitialized()
+    {
+        // Load categories from your JSON or service here
+        Categories.Add(new CategoryPreference { Name = "Motivational", Enabled = true, Weight = 8 });
+        Categories.Add(new CategoryPreference { Name = "Dad Jokes", Enabled = true, Weight = 5 });
+        // etc.
+    }
+
+    private void SetTheme(string theme)
+    {
+        CurrentTheme = theme;
+        // Add your theme switching logic here
+    }
+
+    private async Task SubmitContent()
+    {
+        // Send to your email/API
+        if (!string.IsNullOrWhiteSpace(NewContent))
+        {
+            // TODO: Send email with submission
+            NewContent = "";
+            NewCategory = "";
+            SubmitterName = "";
+        }
+    }
+
+    public class CategoryPreference
+    {
+        public string Name { get; set; } = "";
+        public bool Enabled { get; set; }
+        public int Weight { get; set; }
+    }
 }
