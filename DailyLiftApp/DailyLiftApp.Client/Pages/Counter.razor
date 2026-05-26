@@ -202,10 +202,13 @@
 {
     CurrentTheme = theme;
 
+    Console.WriteLine("SET THEME FIRING");
+
     await JSRuntime.InvokeVoidAsync(
-        "themeManager.setTheme",
-        theme
+        "eval",
+        $"document.body.style.backgroundColor = '{(theme == "dark" ? "black" : "white")}'"
     );
+}
 
     Console.WriteLine($"Theme changed to: {theme}");
 }
