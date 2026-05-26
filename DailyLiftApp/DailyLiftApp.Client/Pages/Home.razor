@@ -10,6 +10,7 @@
 <h1>Daily Lift ☀️</h1>
 
 <style>
+
     .lift-card {
         background: white;
         border-radius: 18px;
@@ -18,20 +19,42 @@
         box-shadow: 0 4px 14px rgba(0,0,0,0.15);
         border: 1px solid #ddd;
         max-width: 700px;
+        transition:
+            background-color 0.3s ease,
+            color 0.3s ease,
+            border-color 0.3s ease;
     }
 
     .lift-title {
         color: #0b1f4d;
         font-weight: bold;
         margin-bottom: 16px;
+        transition: color 0.3s ease;
     }
 
     .lift-category {
         color: gray;
         font-size: 0.9rem;
+        transition: color 0.3s ease;
     }
-</style>
 
+    /* DARK MODE */
+
+    body.dark-theme .lift-card {
+        background: #1e1e1e !important;
+        border: 1px solid #333 !important;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.5);
+    }
+
+    body.dark-theme .lift-title {
+        color: #ffffff !important;
+    }
+
+    body.dark-theme .lift-category {
+        color: #bbbbbb !important;
+    }
+
+</style>
 @if (lift == null)
 {
     <p>Loading lifts...</p>
