@@ -16,8 +16,6 @@
 <body>
     <div id="app">Loading...</div>
 
-    <script src="_framework/blazor.webassembly.js"></script>
-
     <!-- ===== FIREBASE SDK FOR NOTIFICATIONS ===== -->
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-messaging-compat.js"></script>
@@ -97,37 +95,38 @@
     </script>
 
     <script>
-  window.addEventListener('error', function(e) {
-    alert("Error: " + e.message + "\n\n" + e.filename + ":" + e.lineno);
-  });
-</script>
+        window.addEventListener('error', function (e) {
+            alert("Error: " + e.message + "\n\n" + e.filename + ":" + e.lineno);
+        });
+    </script>
 
-<script>
-    window.themeManager = {
+    <script>
+        window.themeManager = {
 
-        setTheme: function (theme) {
+            setTheme: function (theme) {
 
-            document.body.classList.remove("dark-theme");
+                document.body.classList.remove("dark-theme");
 
-            if (theme === "dark") {
-                document.body.classList.add("dark-theme");
+                if (theme === "dark") {
+                    document.body.classList.add("dark-theme");
+                }
+
+                localStorage.setItem("theme", theme);
+            },
+
+            loadTheme: function () {
+
+                const theme = localStorage.getItem("theme");
+
+                if (theme === "dark") {
+                    document.body.classList.add("dark-theme");
+                }
+
+                return theme || "system";
             }
-
-            localStorage.setItem("theme", theme);
-        },
-
-        loadTheme: function () {
-
-            const theme = localStorage.getItem("theme");
-
-            if (theme === "dark") {
-                document.body.classList.add("dark-theme");
-            }
-
-            return theme || "system";
-        }
-    };
-</script>
+        };
+    </script>
+    <script src="_framework/blazor.webassembly.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 ﻿@inherits LayoutComponentBase
+@inject IJSRuntime JSRuntime
 
 <div class="page">
     <div class="sidebar">
@@ -13,3 +14,14 @@
     </main>
 </div>
 
+@code{
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync(
+                "themeManager.loadTheme"
+            );
+        }
+    }
+}
