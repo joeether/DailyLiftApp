@@ -160,12 +160,17 @@
         }
     }
 
-    private void SetTheme(string theme)
-    {
-        CurrentTheme = theme;
+    private async Task SetTheme(string theme)
+{
+    CurrentTheme = theme;
 
-        Console.WriteLine($"Theme changed to: {theme}");
-    }
+    await JSRuntime.InvokeVoidAsync(
+        "themeManager.setTheme",
+        theme
+    );
+
+    Console.WriteLine($"Theme changed to: {theme}");
+}
 
     private async Task SubmitContent()
     {
