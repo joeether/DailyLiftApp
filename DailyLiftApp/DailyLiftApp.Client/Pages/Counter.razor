@@ -8,23 +8,17 @@
 
 <PageTitle>Settings - Daily Lift</PageTitle>
 
-<style>
+<<style>
 
     body.dark-theme {
         background-color: #121212 !important;
         color: white !important;
     }
 
-    body.dark-theme .settings-container {
-        background-color: #121212 !important;
-        color: white !important;
-    }
-
+    body.dark-theme .settings-container,
     body.dark-theme .section {
         background-color: #1e1e1e !important;
         color: white !important;
-        padding: 1rem;
-        border-radius: 12px;
     }
 
     body.dark-theme input,
@@ -35,13 +29,22 @@
         border: 1px solid #555 !important;
     }
 
+    body.dark-theme input::placeholder,
+    body.dark-theme textarea::placeholder {
+        color: #bbbbbb !important;
+    }
+
     body.dark-theme h1,
     body.dark-theme h2,
     body.dark-theme h3,
+    body.dark-theme h4,
+    body.dark-theme h5,
+    body.dark-theme h6,
     body.dark-theme label,
     body.dark-theme span,
     body.dark-theme div,
-    body.dark-theme p {
+    body.dark-theme p,
+    body.dark-theme button {
         color: white !important;
     }
 
@@ -166,6 +169,18 @@
         }
     }
 
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+{
+    if (firstRender)
+    {
+        CurrentTheme = await JSRuntime.InvokeAsync<string>(
+            "themeManager.loadTheme"
+        );
+
+        StateHasChanged();
+    }
+}
+
     private int GetWeight(string category)
     {
         return categoryWeights.TryGetValue(category, out var weight)
@@ -202,14 +217,12 @@
 {
     CurrentTheme = theme;
 
-    Console.WriteLine("SET THEME FIRING");
-
     await JSRuntime.InvokeVoidAsync(
-        "eval",
-        $"document.body.style.backgroundColor = '{(theme == "dark" ? "black" : "white")}'"
+        "themeManager.setTheme",
+        theme
     );
 
-    Console.WriteLine($"Theme changed to: {theme}");
+    StateHasChanged();
 }
 
     private async Task SubmitContent()
