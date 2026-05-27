@@ -2,7 +2,7 @@
 
 @using DailyLiftApp.Client.Models
 @using DailyLiftApp.Client.Services
-
+@inject IJSRuntime JS
 @inject LiftService LiftService
 
 @inject IJSRuntime JSRuntime
@@ -55,6 +55,20 @@
     }
 
 </style>
+
+<style>
+
+    .swipe-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .swipe-card {
+        transition: transform 0.2s ease;
+    }
+
+</style>
 @if (lift == null)
 {
     <p>Loading lifts...</p>
@@ -80,11 +94,15 @@ else
         }
 
     </div>
-    <div class="lift-card shadow-sm">
 
-    <h3 class="lift-title">
+    <div class="swipe-container">
+
+    <div class="lift-card swipe-card"
+         style="transform: translateX(@OffsetXpx);">
+
+    <h2 class="lift-title">
         @lift.Title
-    </h3>
+    </h2>
 
     <p>
         @lift.Content
@@ -104,9 +122,14 @@ else
     <button class="btn btn-success mt-3 ms-2" @onclick="RequestNotificationPermission">
     🛎 Enable Daily Notifications
 </button>
+<button @onclick="MoveLeft">Left</button>
+<button @onclick="MoveRight">Right</button>
 }
 
 @code {
+    private int OffsetX = 0;
+
+    private string OffsetXpx => $"translateX({OffsetX}px)";
 
     private LiftItem? lift;
 
@@ -128,6 +151,16 @@ else
 
         lift = await LiftService.GetRandomLiftAsync(selectedCategories);
     }
+
+    private void MoveLeft()
+{
+    OffsetX -= 50;
+}
+
+private void MoveRight()
+{
+    OffsetX += 50;
+}
 
     private async Task GetNewLift()
     {
