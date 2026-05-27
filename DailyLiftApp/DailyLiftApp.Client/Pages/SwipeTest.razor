@@ -57,14 +57,32 @@
 
 
     .swipe-container {
-        display: flex;
-        justify-content: center;
-        margin-top: 40px;
-    }
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    min-height: 300px;
+}
 
-    .swipe-card {
-        transition: none;
-    }
+.swipe-card {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    max-width: 700px;
+}
+
+.next-card {
+    position: absolute;
+    z-index: 1;
+
+    width: 95%;
+    max-width: 660px;
+
+    opacity: 0.7;
+
+    transform: scale(0.96) translateY(12px);
+}
 
 </style>
 @if (lift == null)
@@ -95,31 +113,51 @@ else
 
     <div class="swipe-container">
 
+    @if (nextLift != null)
+    {
+        <div class="lift-card next-card">
+
+            <h2 class="lift-title">
+                @nextLift.Title
+            </h2>
+
+            <p>
+                @nextLift.Content
+            </p>
+
+            <small class="lift-category">
+                @nextLift.Category
+            </small>
+
+        </div>
+    }
+
     <div class="lift-card swipe-card"
 
-     @onpointerdown="PointerDown"
-     @onpointermove="PointerMove"
-     @onpointerup="PointerUp"
+         @onpointerdown="PointerDown"
+         @onpointermove="PointerMove"
+         @onpointerup="PointerUp"
 
-     style="
-    transform: translateX(@OffsetXpx);
-    touch-action: none;
-    transition:@CardTransition;
-">
+         style="
+            transform: translateX(@OffsetXpx);
+            touch-action: none;
+            transition:@CardTransition;
+         ">
 
-    <h2 class="lift-title">
-        @lift.Title
-    </h2>
+        <h2 class="lift-title">
+            @lift.Title
+        </h2>
 
-    <p>
-        @lift.Content
-    </p>
+        <p>
+            @lift.Content
+        </p>
 
-    <small class="lift-category">
-        @lift.Category
-    </small>
+        <small class="lift-category">
+            @lift.Category
+        </small>
 
-</div>
+    </div>
+
 </div>
 
     <button class="btn btn-primary mt-3"
@@ -135,6 +173,7 @@ else
 }
 
 @code {
+    private LiftItem? nextLift;
     private bool AnimateCard = false;
 
     private int SwipeThreshold = 150;
@@ -169,6 +208,7 @@ else
         selectedCategories = categories.ToList();
 
         lift = await LiftService.GetRandomLiftAsync(selectedCategories);
+        nextLift = await LiftService.GetRandomLiftAsync(selectedCategories);
     }
 
     private void PointerDown(PointerEventArgs e)
