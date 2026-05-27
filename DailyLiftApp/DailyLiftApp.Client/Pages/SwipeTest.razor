@@ -2,6 +2,7 @@
 
 @using DailyLiftApp.Client.Models
 @using DailyLiftApp.Client.Services
+@using Microsoft.AspNetCore.Components.Web
 @inject IJSRuntime JS
 @inject LiftService LiftService
 
@@ -95,7 +96,15 @@ else
     <div class="swipe-container">
 
     <div class="lift-card swipe-card"
-         style="transform: translateX(@OffsetXpx);">
+
+     @onpointerdown="PointerDown"
+     @onpointermove="PointerMove"
+     @onpointerup="PointerUp"
+
+     style="
+        transform: translateX(@OffsetXpx);
+        touch-action: none;
+     ">
 
     <h2 class="lift-title">
         @lift.Title
@@ -125,6 +134,9 @@ else
 }
 
 @code {
+    private bool IsDragging = false;
+
+    private double StartX = 0;
     private int OffsetX = 0;
 
     private string OffsetXpx => $"{OffsetX}px";
@@ -149,6 +161,26 @@ else
 
         lift = await LiftService.GetRandomLiftAsync(selectedCategories);
     }
+
+    private void PointerDown(PointerEventArgs e)
+{
+    IsDragging = true;
+
+    StartX = e.ClientX;
+}
+
+private void PointerMove(PointerEventArgs e)
+{
+    if (IsDragging)
+    {
+        OffsetX = (int)(e.ClientX - StartX);
+    }
+}
+
+private void PointerUp(PointerEventArgs e)
+{
+    IsDragging = false;
+}
 
     private void MoveLeft()
 {
