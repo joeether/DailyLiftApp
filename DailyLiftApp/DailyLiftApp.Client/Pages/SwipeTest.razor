@@ -1,0 +1,169 @@
+@page "/swipetest"
+
+@using DailyLiftApp.Client.Models
+@using DailyLiftApp.Client.Services
+
+@inject LiftService LiftService
+
+@inject IJSRuntime JSRuntime
+
+<h1>SandBox Swipe☀️</h1>
+
+<style>
+
+    .lift-card {
+        background: white;
+        border-radius: 18px;
+        padding: 24px;
+        margin-top: 20px;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+        border: 1px solid #ddd;
+        max-width: 700px;
+        transition:
+            background-color 0.3s ease,
+            color 0.3s ease,
+            border-color 0.3s ease;
+    }
+
+    .lift-title {
+        color: #0b1f4d;
+        font-weight: bold;
+        margin-bottom: 16px;
+        transition: color 0.3s ease;
+    }
+
+    .lift-category {
+        color: gray;
+        font-size: 0.9rem;
+        transition: color 0.3s ease;
+    }
+
+    /* DARK MODE */
+
+    body.dark-theme .lift-card {
+        background: #1e1e1e !important;
+        border: 1px solid #333 !important;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.5);
+    }
+
+    body.dark-theme .lift-title {
+        color: #ffffff !important;
+    }
+
+    body.dark-theme .lift-category {
+        color: #bbbbbb !important;
+    }
+
+</style>
+@if (lift == null)
+{
+    <p>Loading lifts...</p>
+}
+else
+{
+    <div class="mb-3">
+
+        @foreach (var category in categories)
+        {
+            <div class="form-check">
+
+                <input class="form-check-input"
+                       type="checkbox"
+                       checked="@selectedCategories.Contains(category)"
+                       @onchange="@((ChangeEventArgs e) => ToggleCategory(category, e.Value))" />
+
+                <label class="form-check-label">
+                    @category
+                </label>
+
+            </div>
+        }
+
+    </div>
+    <div class="lift-card shadow-sm">
+
+    <h3 class="lift-title">
+        @lift.Title
+    </h3>
+
+    <p>
+        @lift.Content
+    </p>
+
+    <small class="lift-category">
+        @lift.Category
+    </small>
+
+</div>
+
+    <button class="btn btn-primary mt-3"
+            @onclick="GetNewLift">
+        New Lifts
+    </button>
+
+    <button class="btn btn-success mt-3 ms-2" @onclick="RequestNotificationPermission">
+    🛎 Enable Daily Notifications
+</button>
+}
+
+@code {
+
+    private LiftItem? lift;
+
+    private List<string> categories = new();
+
+    private List<string> selectedCategories = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var allLifts = await LiftService.GetLiftsAsync();
+
+        categories = allLifts
+            .Select(l => l.Category)
+            .Distinct()
+            .OrderBy(c => c)
+            .ToList();
+
+        selectedCategories = categories.ToList();
+
+        lift = await LiftService.GetRandomLiftAsync(selectedCategories);
+    }
+
+    private async Task GetNewLift()
+    {
+        lift = await LiftService.GetRandomLiftAsync(selectedCategories);
+    }
+
+    private void ToggleCategory(string category, object? value)
+    {
+        bool isChecked = value?.ToString() == "true";
+
+        if (isChecked)
+        {
+            if (!selectedCategories.Contains(category))
+                selectedCategories.Add(category);
+        }
+        else
+        {
+            selectedCategories.Remove(category);
+        }
+    }
+
+    private async Task RequestNotificationPermission()
+    {
+        try
+        {
+            var permission = await JSRuntime.InvokeAsync<string>("requestNotificationPermission");
+
+            if (permission == "granted")
+            {
+                // The JS function already saved it, but we can also call C# if you want
+                Console.WriteLine("Notifications enabled!");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine("Error: " + ex.Message);
+        }
+    }
+}
