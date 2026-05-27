@@ -13,5 +13,6 @@ builder.Services.AddScoped(sp => new HttpClient
 });
 
 builder.Services.AddScoped<LiftService>();
+builder.Services.AddScoped<EmailService>();
 
 await builder.Build().RunAsync();

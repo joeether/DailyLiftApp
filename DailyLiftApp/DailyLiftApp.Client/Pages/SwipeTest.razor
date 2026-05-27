@@ -3,7 +3,6 @@
 @using DailyLiftApp.Client.Models
 @using DailyLiftApp.Client.Services
 @using Microsoft.AspNetCore.Components.Web
-@inject IJSRuntime JS
 @inject LiftService LiftService
 
 @inject IJSRuntime JSRuntime
@@ -11,299 +10,348 @@
 <h1>SandBox Swipe☀️</h1>
 
 <style>
+	body {
+		overflow-x: hidden;
+		overflow-y: hidden;
+	}
 
-    .lift-card {
-        background: white;
-        border-radius: 18px;
-        padding: 24px;
-        margin-top: 20px;
-        box-shadow: 0 4px 14px rgba(0,0,0,0.15);
-        border: 1px solid #ddd;
-        max-width: 700px;
-        transition:
-            background-color 0.3s ease,
-            color 0.3s ease,
-            border-color 0.3s ease;
-    }
+	.lift-card {
+		background: white;
+		border-radius: 18px;
+		padding: 24px;
+		margin-top: 20px;
+		box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+		border: 1px solid #ddd;
+		min-height: 320px;
+		max-width: 700px;
+		transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+	}
 
-    .lift-title {
-        color: #0b1f4d;
-        font-weight: bold;
-        margin-bottom: 16px;
-        transition: color 0.3s ease;
-    }
+	.lift-title {
+		color: #0b1f4d;
+		font-weight: bold;
+		margin-bottom: 16px;
+		transition: color 0.3s ease;
+	}
 
-    .lift-category {
-        color: gray;
-        font-size: 0.9rem;
-        transition: color 0.3s ease;
-    }
+	.lift-category {
+		color: gray;
+		font-size: 0.9rem;
+		transition: color 0.3s ease;
+	}
 
-    /* DARK MODE */
+	/* DARK MODE */
 
-    body.dark-theme .lift-card {
-        background: #1e1e1e !important;
-        border: 1px solid #333 !important;
-        box-shadow: 0 4px 14px rgba(0,0,0,0.5);
-    }
+	body.dark-theme .lift-card {
+		background: #1e1e1e !important;
+		border: 1px solid #333 !important;
+		box-shadow: 0 4px 14px rgba(0,0,0,0.5);
+	}
 
-    body.dark-theme .lift-title {
-        color: #ffffff !important;
-    }
+	body.dark-theme .lift-title {
+		color: #ffffff !important;
+	}
 
-    body.dark-theme .lift-category {
-        color: #bbbbbb !important;
-    }
+	body.dark-theme .lift-category {
+		color: #bbbbbb !important;
+	}
 
 
-    .swipe-container {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    min-height: 300px;
-}
+	.swipe-container {
+		position: relative;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-top: 40px;
+		min-height: 300px;
+	}
 
-.swipe-card {
-    position: absolute;
-    z-index: 2;
-    width: 100%;
-    max-width: 700px;
-}
+	.swipe-card {
+		position: absolute;
+		z-index: 2;
+		width: 100%;
+		max-width: 700px;
+	}
 
-.next-card {
-    position: absolute;
-    z-index: 1;
+	.next-card {
+		position: absolute;
+		z-index: 1;
+		width: 95%;
+		max-width: 660px;
+		opacity: 0.7;
+	}
 
-    width: 95%;
-    max-width: 660px;
-
-    opacity: 0.7;
-
-    transform: scale(0.96) translateY(12px);
-}
+	.button-bar {
+		display: flex;
+		gap: 12px;
+		justify-content: center;
+		margin-top: 100px;
+		flex-wrap: wrap;
+	}
 
 </style>
 @if (lift == null)
 {
-    <p>Loading lifts...</p>
+	<p>Loading lifts...</p>
 }
 else
 {
-    <div class="mb-3">
+	<div class="mb-3">
 
-        @foreach (var category in categories)
-        {
-            <div class="form-check">
+		@foreach (var category in categories)
+		{
+			<div class="form-check">
 
-                <input class="form-check-input"
-                       type="checkbox"
-                       checked="@selectedCategories.Contains(category)"
-                       @onchange="@((ChangeEventArgs e) => ToggleCategory(category, e.Value))" />
+				<input class="form-check-input"
+					   type="checkbox"
+					   checked="@selectedCategories.Contains(category)"
+					   @onchange="@((ChangeEventArgs e) => ToggleCategory(category, e.Value))" />
 
-                <label class="form-check-label">
-                    @category
-                </label>
+				<label class="form-check-label">
+					@category
+				</label>
 
-            </div>
-        }
+			</div>
+		}
 
-    </div>
+	</div>
 
-    <div class="swipe-container">
+	<div class="swipe-container">
 
-    @if (nextLift != null)
-    {
-        <div class="lift-card next-card">
+		@if (nextLift != null)
+		{
+			<div class="lift-card next-card"
+				 style="
+		        transform:
+		        scale(@NextCardScale)
+		        translateY(12px);
+		     ">
 
-            <h2 class="lift-title">
-                @nextLift.Title
-            </h2>
+				<h2 class="lift-title">
+					@nextLift.Title
+				</h2>
 
-            <p>
-                @nextLift.Content
-            </p>
+				<p>
+					@nextLift.Content
+				</p>
 
-            <small class="lift-category">
-                @nextLift.Category
-            </small>
+				<small class="lift-category">
+					@nextLift.Category
+				</small>
 
-        </div>
-    }
+			</div>
+		}
 
-    <div class="lift-card swipe-card"
+		@if (ShowCard)
+		{
+			<div class="lift-card swipe-card"
+				 @onpointerdown="PointerDown"
+				 @onpointermove="PointerMove"
+				 @onpointerup="PointerUp"
+				 @onpointerleave="PointerUp"
+				 style="
+					transform:
+						translateX(@OffsetXpx)
+						rotate(@($"{OffsetX * 0.03}deg"));
+					opacity:@CardOpacity;
+					touch-action: none;
+					transition:@CardTransition;
+				">
 
-         @onpointerdown="PointerDown"
-         @onpointermove="PointerMove"
-         @onpointerup="PointerUp"
+				<h2 class="lift-title">
+					@lift.Title
+				</h2>
 
-         style="
-            transform: translateX(@OffsetXpx);
-            touch-action: none;
-            transition:@CardTransition;
-         ">
+				<p>
+					@lift.Content
+				</p>
 
-        <h2 class="lift-title">
-            @lift.Title
-        </h2>
+				<small class="lift-category">
+					@lift.Category
+				</small>
 
-        <p>
-            @lift.Content
-        </p>
+			</div>
+		}
 
-        <small class="lift-category">
-            @lift.Category
-        </small>
+	</div>
 
-    </div>
+	<div class="button-bar">
+		<button class="btn btn-primary mt-3"
+				@onclick="GetNewLift">
+			New Lifts
+		</button>
 
-</div>
-
-    <button class="btn btn-primary mt-3"
-            @onclick="GetNewLift">
-        New Lifts
-    </button>
-
-    <button class="btn btn-success mt-3 ms-2" @onclick="RequestNotificationPermission">
-    🛎 Enable Daily Notifications
-</button>
-<button @onclick="MoveLeft">Left</button>
-<button @onclick="MoveRight">Right</button>
+		@if (!NotificationsEnabled)
+		{
+			<button class="btn btn-success mt-3 ms-2"
+					@onclick="RequestNotificationPermission">
+				🛎 Enable Daily Notifications
+			</button>
+		}
+	</div>
 }
 
 @code {
-    private LiftItem? nextLift;
-    private bool AnimateCard = false;
+	private LiftItem? nextLift;
+	private bool AnimateCard = false;
+	private bool ShowCard = true;
 
-    private int SwipeThreshold = 150;
-    private bool IsDragging = false;
+	private int SwipeThreshold = 150;
+	private bool IsDragging = false;
 
-    private double StartX = 0;
-    private int OffsetX = 0;
+	private double StartX = 0;
+	private int OffsetX = 0;
 
-    private string OffsetXpx => $"{OffsetX}px";
+	private string OffsetXpx => $"{OffsetX}px";
 
-    private LiftItem? lift;
+	private LiftItem? lift;
 
-    private List<string> categories = new();
+	private List<string> categories = new();
 
-    private List<string> selectedCategories = new();
+	private List<string> selectedCategories = new();
+	private bool NotificationsEnabled = false;
 
-    private string CardTransition =>
-    AnimateCard
-        ? "transform 0.3s ease"
-        : "none";
+	private double CardOpacity =>
+	1 - Math.Min(Math.Abs(OffsetX) / 500.0, 0.5);
 
-    protected override async Task OnInitializedAsync()
-    {
-        var allLifts = await LiftService.GetLiftsAsync();
+	private double NextCardScale =>
+	0.96 + Math.Min(Math.Abs(OffsetX) / 5000.0, 0.04);
 
-        categories = allLifts
-            .Select(l => l.Category)
-            .Distinct()
-            .OrderBy(c => c)
-            .ToList();
+	private string CardTransition =>
+	AnimateCard
+		? "transform 0.3s ease"
+		: "none";
 
-        selectedCategories = categories.ToList();
+	protected override async Task OnInitializedAsync()
+	{
+		var allLifts = await LiftService.GetLiftsAsync();
 
-        lift = await LiftService.GetRandomLiftAsync(selectedCategories);
-        nextLift = await LiftService.GetRandomLiftAsync(selectedCategories);
-    }
+		categories = allLifts
+			.Select(l => l.Category)
+			.Distinct()
+			.OrderBy(c => c)
+			.ToList();
 
-    private void PointerDown(PointerEventArgs e)
-{
-    AnimateCard = false;
+		selectedCategories = categories.ToList();
 
-    IsDragging = true;
+		lift = await LiftService.GetRandomLiftAsync(selectedCategories);
+		nextLift = await LiftService.GetRandomLiftAsync(selectedCategories);
+	}
 
-    StartX = e.ClientX;
-}
+	private void PointerDown(PointerEventArgs e)
+	{
+		AnimateCard = false;
 
-private void PointerMove(PointerEventArgs e)
-{
-    if (IsDragging)
-    {
-        OffsetX = (int)(e.ClientX - StartX);
-    }
-}
+		IsDragging = true;
 
-private async Task PointerUp(PointerEventArgs e)
-{
-    IsDragging = false;
+		StartX = e.ClientX;
+	}
 
-    AnimateCard = true;
+	private void PointerMove(PointerEventArgs e)
+	{
+		if (IsDragging)
+		{
+			OffsetX = (int)(e.ClientX - StartX);
+		}
+	}
 
-    if (Math.Abs(OffsetX) > SwipeThreshold)
-    {
-        if (OffsetX > 0)
-        {
-            OffsetX = 1000;
-        }
-        else
-        {
-            OffsetX = -1000;
-        }
+	private async Task PointerUp(PointerEventArgs e)
+	{
+		if (!IsDragging)
+			return;
 
-        StateHasChanged();
+		IsDragging = false;
 
-        await Task.Delay(300);
+		AnimateCard = true;
 
-        lift = await LiftService.GetRandomLiftAsync(selectedCategories);
+		if (Math.Abs(OffsetX) > SwipeThreshold)
+		{
+			var screenWidth = await GetScreenWidth();
 
-        OffsetX = 0;
-    }
-    else
-    {
-        OffsetX = 0;
-    }
-}
+			if (OffsetX > 0)
+			{
+				OffsetX = screenWidth;
+			}
+			else
+			{
+				OffsetX = -screenWidth;
+			}
 
-    private void MoveLeft()
-{
-    OffsetX -= 350;
-}
+			//StateHasChanged();
 
-private void MoveRight()
-{
-    OffsetX += 350;
-}
+			await Task.Delay(300);
 
-    private async Task GetNewLift()
-    {
-        lift = await LiftService.GetRandomLiftAsync(selectedCategories);
-    }
+			ShowCard = false;
 
-    private void ToggleCategory(string category, object? value)
-    {
-        bool isChecked = value?.ToString() == "true";
+			StateHasChanged();
 
-        if (isChecked)
-        {
-            if (!selectedCategories.Contains(category))
-                selectedCategories.Add(category);
-        }
-        else
-        {
-            selectedCategories.Remove(category);
-        }
-    }
+			await LoadNextLift();
 
-    private async Task RequestNotificationPermission()
-    {
-        try
-        {
-            var permission = await JSRuntime.InvokeAsync<string>("requestNotificationPermission");
+			OffsetX = 0;
 
-            if (permission == "granted")
-            {
-                // The JS function already saved it, but we can also call C# if you want
-                Console.WriteLine("Notifications enabled!");
-            }
-        }
-        catch (Exception ex)
-        {
-            Console.Error.WriteLine("Error: " + ex.Message);
-        }
-    }
+			AnimateCard = false;
+
+			ShowCard = true;
+		}
+		else
+		{
+			OffsetX = 0;
+		}
+	}
+
+	private async Task LoadNextLift()
+	{
+		lift = nextLift;
+
+		nextLift = await LiftService.GetRandomLiftAsync(selectedCategories);
+	}
+
+	private async Task GetNewLift()
+	{
+		await LoadNextLift();
+	}
+
+	private async Task<int> GetScreenWidth()
+	{
+		return await JSRuntime.InvokeAsync<int>(
+			"eval",
+			"window.innerWidth"
+		);
+	}
+
+	private void ToggleCategory(string category, object? value)
+	{
+		bool isChecked = value?.ToString() == "true";
+
+		if (isChecked)
+		{
+			if (!selectedCategories.Contains(category))
+				selectedCategories.Add(category);
+		}
+		else
+		{
+			selectedCategories.Remove(category);
+		}
+	}
+
+	private async Task RequestNotificationPermission()
+	{
+		try
+		{
+			var permission = await JSRuntime.InvokeAsync<string>("requestNotificationPermission");
+
+			Console.WriteLine(permission);
+
+			if (permission == "granted")
+			{
+				NotificationsEnabled = true;
+				StateHasChanged();
+				Console.WriteLine("Notifications enabled!");
+			}
+		}
+		catch (Exception ex)
+		{
+			Console.Error.WriteLine("Error: " + ex.Message);
+		}
+	}
 }
